@@ -286,7 +286,8 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
       
         FechasDisponiblesForm fd=new FechasDisponiblesForm();
-       in.CentrarVentana(fd);
+        fd.setVisible(true);
+      // in.CentrarVentana(fd);
        //JOptionPane.showConfirmDialog(null,"Desea confirmar pedido");
         
     }//GEN-LAST:event_jButton2ActionPerformed
