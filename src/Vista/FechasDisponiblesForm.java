@@ -35,7 +35,7 @@ public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
 
         ventana.setBackground(new java.awt.Color(255, 255, 255));
 
-        //rSCalendar1.setColorBackground(new java.awt.Color(255, 153, 51));
+        rSCalendar1.setColorBackground(new java.awt.Color(255, 153, 51));
         rSCalendar1.setColorButtonHover(new java.awt.Color(255, 255, 51));
         rSCalendar1.setColorDiaActual(new java.awt.Color(255, 102, 102));
 
