@@ -180,7 +180,7 @@ public class Inicio extends javax.swing.JFrame {
        InventarioPastelesForm ip=new InventarioPastelesForm();
        CentrarVentana(ip);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
-  void CentrarVentana(JInternalFrame frame){
+  public void CentrarVentana(JInternalFrame frame){
         VentanaPrincipal.add(frame);
         Dimension dimension=VentanaPrincipal.getSize();
         Dimension DFrame=frame.getSize();
@@ -199,7 +199,7 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Fechas_disponibles;
-    private javax.swing.JLabel VentanaPrincipal;
+    public javax.swing.JLabel VentanaPrincipal;
     private javax.swing.JMenuItem ayuda;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
