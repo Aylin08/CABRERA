@@ -1,5 +1,8 @@
 package Vista;
 
+import Vista.CotizacionNormalForm;
+import Vista.FechasDisponiblesForm;
+import Vista.InventarioPastelesForm;
 import java.awt.Dimension;
 import javax.swing.JInternalFrame;
 
