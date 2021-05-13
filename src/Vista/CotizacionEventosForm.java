@@ -5,7 +5,6 @@
  */
 package Vista;
 
-//Hola?? soy dhoko :v
 /**
  *
  * @author AYLIN
