@@ -284,11 +284,16 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txt_productoMouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      
+      JOptionPane.showConfirmDialog(null,"Desea confirmar pedido");
+      {
         FechasDisponiblesForm fd=new FechasDisponiblesForm();
         fd.setVisible(true);
+        in.CentrarVentana(fd);
+        //this.dispose();
+      }
+       
       // in.CentrarVentana(fd);
-       //JOptionPane.showConfirmDialog(null,"Desea confirmar pedido");
+       
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
