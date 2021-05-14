@@ -380,7 +380,8 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_agregarActionPerformed
 
     private void btn_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SalirActionPerformed
-       /* eliminar();
+      this.dispose();
+        /* eliminar();
         limpiar();
         listar();
         nuevo();*/
