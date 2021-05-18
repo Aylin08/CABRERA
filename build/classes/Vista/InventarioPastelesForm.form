@@ -124,9 +124,9 @@
                           <Component id="jPanel5" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="lbl_direccion3" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl_direccion2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -167,7 +167,6 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="lbl_estado7" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   <Component id="txt_stock2" max="32767" attributes="0"/>
@@ -568,9 +567,9 @@
                           <Component id="jPanel6" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="lbl_direccion5" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl_direccion4" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -611,7 +610,6 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="lbl_estado8" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   <Component id="txt_stock3" max="32767" attributes="0"/>

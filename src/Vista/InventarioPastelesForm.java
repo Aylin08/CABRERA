@@ -705,7 +705,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_actualizar1ActionPerformed
 
     private void btn_Salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_Salir1ActionPerformed
-        // TODO add your handling code here:
+       this.dispose();
     }//GEN-LAST:event_btn_Salir1ActionPerformed
 
     private void btn_eliminar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminar2ActionPerformed
