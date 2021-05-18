@@ -296,7 +296,7 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
         in.CentrarVentana(fd);
          System.out.println("confirmado");}
     else{
-            System.out.println("vale... no borro nada...");}
+            System.out.println("vale... no hago nada...");}
        
       // in.CentrarVentana(fd);
           
