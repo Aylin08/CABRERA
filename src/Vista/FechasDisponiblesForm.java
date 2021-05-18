@@ -2,7 +2,7 @@ package Vista;
 
 import javax.swing.JOptionPane;
 
-
+//Hola, señor locutor, si me hace el favor, pongame una cancion, que no hable de amor(8)
 public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
 
     public FechasDisponiblesForm() {
