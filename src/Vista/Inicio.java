@@ -29,18 +29,19 @@ public class Inicio extends javax.swing.JFrame {
         menu = new javax.swing.JMenu();
         salir = new javax.swing.JMenuItem();
         ayuda = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+        clientes = new javax.swing.JMenuItem();
+        cotizacion = new javax.swing.JMenu();
+        eventos = new javax.swing.JMenuItem();
+        normal = new javax.swing.JMenuItem();
+        calendario = new javax.swing.JMenu();
         Fechas_disponibles = new javax.swing.JMenuItem();
-        jmenu_pedido = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        menu_materiPrima = new javax.swing.JMenuItem();
-        menu_inventario = new javax.swing.JMenuItem();
-        menu_pedidos = new javax.swing.JMenuItem();
-        menu_ventas = new javax.swing.JMenuItem();
+        pedido = new javax.swing.JMenu();
+        nuevo_editar = new javax.swing.JMenuItem();
+        inventario = new javax.swing.JMenu();
+        materia_prima = new javax.swing.JMenuItem();
+        reporte_inventario = new javax.swing.JMenuItem();
+        reporte_pedidos = new javax.swing.JMenuItem();
+        reporte_ventas = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Backery \"Cabrera\"");
@@ -74,28 +75,36 @@ public class Inicio extends javax.swing.JFrame {
         ayuda.setText("Ayuda");
         menu.add(ayuda);
 
-        jMenuBar1.add(menu);
-
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pago.png"))); // NOI18N
-        jMenu2.setText("Cotización");
-
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/trabajo-en-equipo.png"))); // NOI18N
-        jMenuItem1.setText("Eventos");
-        jMenu2.add(jMenuItem1);
-
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/llamada.png"))); // NOI18N
-        jMenuItem2.setText("Normal");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        clientes.setText("Clientes");
+        clientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                clientesActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem2);
+        menu.add(clientes);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(menu);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/fecha.png"))); // NOI18N
-        jMenu3.setText("Fechas");
+        cotizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pago.png"))); // NOI18N
+        cotizacion.setText("Cotización");
+
+        eventos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/trabajo-en-equipo.png"))); // NOI18N
+        eventos.setText("Eventos");
+        cotizacion.add(eventos);
+
+        normal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/llamada.png"))); // NOI18N
+        normal.setText("Normal");
+        normal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                normalActionPerformed(evt);
+            }
+        });
+        cotizacion.add(normal);
+
+        jMenuBar1.add(cotizacion);
+
+        calendario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/fecha.png"))); // NOI18N
+        calendario.setText("Fechas");
 
         Fechas_disponibles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/calendario.png"))); // NOI18N
         Fechas_disponibles.setText("Abrir calendario");
@@ -104,65 +113,65 @@ public class Inicio extends javax.swing.JFrame {
                 Fechas_disponiblesActionPerformed(evt);
             }
         });
-        jMenu3.add(Fechas_disponibles);
+        calendario.add(Fechas_disponibles);
 
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(calendario);
 
-        jmenu_pedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
-        jmenu_pedido.setText("Pedidos");
+        pedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
+        pedido.setText("Pedidos");
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/anadir.png"))); // NOI18N
-        jMenuItem5.setText("Nuevo / Editar");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+        nuevo_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/anadir.png"))); // NOI18N
+        nuevo_editar.setText("Nuevo / Editar");
+        nuevo_editar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
+                nuevo_editarActionPerformed(evt);
             }
         });
-        jmenu_pedido.add(jMenuItem5);
+        pedido.add(nuevo_editar);
 
-        jMenuBar1.add(jmenu_pedido);
+        jMenuBar1.add(pedido);
 
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/factura.png"))); // NOI18N
-        jMenu4.setText("Inventario");
+        inventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/factura.png"))); // NOI18N
+        inventario.setText("Inventario");
 
-        menu_materiPrima.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/valores.png"))); // NOI18N
-        menu_materiPrima.setText("Inventario de materia prima");
-        menu_materiPrima.addActionListener(new java.awt.event.ActionListener() {
+        materia_prima.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/valores.png"))); // NOI18N
+        materia_prima.setText("Inventario de materia prima");
+        materia_prima.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menu_materiPrimaActionPerformed(evt);
+                materia_primaActionPerformed(evt);
             }
         });
-        jMenu4.add(menu_materiPrima);
+        inventario.add(materia_prima);
 
-        menu_inventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/inventario.png"))); // NOI18N
-        menu_inventario.setText("Reporte de Inventario");
-        menu_inventario.addActionListener(new java.awt.event.ActionListener() {
+        reporte_inventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/inventario.png"))); // NOI18N
+        reporte_inventario.setText("Reporte de Inventario");
+        reporte_inventario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menu_inventarioActionPerformed(evt);
+                reporte_inventarioActionPerformed(evt);
             }
         });
-        jMenu4.add(menu_inventario);
-        menu_inventario.getAccessibleContext().setAccessibleDescription("");
+        inventario.add(reporte_inventario);
+        reporte_inventario.getAccessibleContext().setAccessibleDescription("");
 
-        menu_pedidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/directorio.png"))); // NOI18N
-        menu_pedidos.setText("Reporte de pedidos");
-        menu_pedidos.addActionListener(new java.awt.event.ActionListener() {
+        reporte_pedidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/directorio.png"))); // NOI18N
+        reporte_pedidos.setText("Reporte de pedidos");
+        reporte_pedidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menu_pedidosActionPerformed(evt);
+                reporte_pedidosActionPerformed(evt);
             }
         });
-        jMenu4.add(menu_pedidos);
+        inventario.add(reporte_pedidos);
 
-        menu_ventas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/reporte.png"))); // NOI18N
-        menu_ventas.setText("Reporte de ventas");
-        menu_ventas.addActionListener(new java.awt.event.ActionListener() {
+        reporte_ventas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/reporte.png"))); // NOI18N
+        reporte_ventas.setText("Reporte de ventas");
+        reporte_ventas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menu_ventasActionPerformed(evt);
+                reporte_ventasActionPerformed(evt);
             }
         });
-        jMenu4.add(menu_ventas);
+        inventario.add(reporte_ventas);
 
-        jMenuBar1.add(jMenu4);
+        jMenuBar1.add(inventario);
 
         setJMenuBar(jMenuBar1);
 
@@ -188,41 +197,46 @@ public class Inicio extends javax.swing.JFrame {
         System.exit(0);  
     }//GEN-LAST:event_salirActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void normalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_normalActionPerformed
         CotizacionNormalForm cn= new CotizacionNormalForm();
         CentrarVentana(cn);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_normalActionPerformed
 
     private void Fechas_disponiblesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fechas_disponiblesActionPerformed
        FechasDisponiblesForm fd= new FechasDisponiblesForm();
        CentrarVentana(fd);
     }//GEN-LAST:event_Fechas_disponiblesActionPerformed
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+    private void nuevo_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevo_editarActionPerformed
        InventarioPastelesForm ip=new InventarioPastelesForm();
        CentrarVentana(ip);
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+    }//GEN-LAST:event_nuevo_editarActionPerformed
 
-    private void menu_ventasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_ventasActionPerformed
+    private void reporte_ventasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reporte_ventasActionPerformed
        ReporteVentasForm vf=new ReporteVentasForm();
        CentrarVentana(vf);
-    }//GEN-LAST:event_menu_ventasActionPerformed
+    }//GEN-LAST:event_reporte_ventasActionPerformed
 
-    private void menu_pedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_pedidosActionPerformed
+    private void reporte_pedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reporte_pedidosActionPerformed
        ReportePedidosForm rp =new ReportePedidosForm();
        CentrarVentana(rp);
-    }//GEN-LAST:event_menu_pedidosActionPerformed
+    }//GEN-LAST:event_reporte_pedidosActionPerformed
 
-    private void menu_inventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_inventarioActionPerformed
+    private void reporte_inventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reporte_inventarioActionPerformed
         ReporteExistenciasForm RE = new ReporteExistenciasForm();
         CentrarVentana(RE);
         
-    }//GEN-LAST:event_menu_inventarioActionPerformed
+    }//GEN-LAST:event_reporte_inventarioActionPerformed
 
-    private void menu_materiPrimaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_materiPrimaActionPerformed
+    private void materia_primaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materia_primaActionPerformed
         ExistenciasForm EF =new ExistenciasForm();
         CentrarVentana(EF);
-    }//GEN-LAST:event_menu_materiPrimaActionPerformed
+    }//GEN-LAST:event_materia_primaActionPerformed
+
+    private void clientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientesActionPerformed
+      ClienteForm CF= new ClienteForm();
+      CentrarVentana(CF);
+    }//GEN-LAST:event_clientesActionPerformed
   public void CentrarVentana(JInternalFrame frame){
         VentanaPrincipal.add(frame);
         Dimension dimension=VentanaPrincipal.getSize();
@@ -245,21 +259,22 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JMenuItem Fechas_disponibles;
     public javax.swing.JLabel VentanaPrincipal;
     private javax.swing.JMenuItem ayuda;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu calendario;
+    private javax.swing.JMenuItem clientes;
+    private javax.swing.JMenu cotizacion;
+    private javax.swing.JMenuItem eventos;
+    private javax.swing.JMenu inventario;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
-    private javax.swing.JMenu jmenu_pedido;
+    private javax.swing.JMenuItem materia_prima;
     private javax.swing.JMenu menu;
-    private javax.swing.JMenuItem menu_inventario;
-    private javax.swing.JMenuItem menu_materiPrima;
-    private javax.swing.JMenuItem menu_pedidos;
-    private javax.swing.JMenuItem menu_ventas;
+    private javax.swing.JMenuItem normal;
+    private javax.swing.JMenuItem nuevo_editar;
+    private javax.swing.JMenu pedido;
+    private javax.swing.JMenuItem reporte_inventario;
+    private javax.swing.JMenuItem reporte_pedidos;
+    private javax.swing.JMenuItem reporte_ventas;
     private javax.swing.JMenuItem salir;
     // End of variables declaration//GEN-END:variables
 }
