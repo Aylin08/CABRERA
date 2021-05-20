@@ -1,12 +1,14 @@
 package Vista;
 
-import java.awt.Dimension;
+import java.awt.*;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 
 public class CotizacionNormalForm extends javax.swing.JInternalFrame {
     double acum;
     Inicio in = new Inicio();
+
+
     public CotizacionNormalForm() {
         initComponents();
     }
@@ -271,9 +273,16 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
         this.dispose();
     }//GEN-LAST:event_btn_salirActionPerformed
 
-    private void txt_productoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_productoActionPerformed
-      
-    }//GEN-LAST:event_txt_productoActionPerformed
+    private void txt_productoActionPerformed(java.awt.event.ActionEvent evt)
+    {
+         TextField txt_subtotal= new TextField();
+        String pre="--Precio--";
+        if(op!="Pastel")
+        {
+
+        } else  txt_subtotal.setText("200");
+    }
+        //GEN-LAST:event_txt_productoActionPerformed
 
     private void txt_saborActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_saborActionPerformed
         // TODO add your handling code here:
@@ -286,7 +295,7 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
     private void btn_aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aceptarActionPerformed
       
         FechasDisponiblesForm fd=new FechasDisponiblesForm();
-       /* //this.dispose();*/
+
      int confirmado = JOptionPane.showConfirmDialog(null,
    "¿Desea confirmar pedido?");
 
@@ -302,26 +311,27 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
           
     }//GEN-LAST:event_btn_aceptarActionPerformed
 
- 
+
     void producto()
 {
     String op= "--Seleccionar--";
      if(op=="Pastel")
      {
          JOptionPane.showMessageDialog(null,"pasteles");
+         txt_subtotal.setText("300");
      }
      else
      { if(op=="Cupcakes")
      {
          JOptionPane.showMessageDialog(null,"cupcakes");
+         txt_subtotal.setText("300");
      }
      }
      
     
 }
 void sabor ()
-{
-    String op= "--Seleccionar--";
+{String op= "--Seleccionar--";
      switch (op){
          case "Chocolate":
              break;
