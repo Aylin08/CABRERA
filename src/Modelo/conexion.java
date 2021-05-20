@@ -17,9 +17,8 @@ public class conexion {
 
 
     // Funcion que va conectarse a mi bd de mysql
-    public void conector() {
-        // Reseteamos a null la conexion a la bd
-        con=null;
+    public Connection conector() throws SQLException{
+       
         try{
             Class.forName(driver);
             // Nos conectamos a la bd
@@ -34,6 +33,7 @@ public class conexion {
             Logger.getLogger(conexion.class.getName()).log(Level.SEVERE,null,e);
               System.out.println("error");
         }
+          return con;
       
     }
                                       

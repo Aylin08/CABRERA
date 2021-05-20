@@ -6,6 +6,9 @@
 package Vista;
 import Modelo.conexion;
 import java.io.*;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 /**
  *
@@ -699,9 +702,13 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
         conexion c= new conexion();
-        c.conector();
-        
-        //nuevo();
+        try {
+            c.conector();
+            
+            //nuevo();
+        } catch (SQLException ex) {
+            Logger.getLogger(InventarioPastelesForm.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_btn_nuevoActionPerformed
 
     private void tabla_registroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_registroMouseClicked
