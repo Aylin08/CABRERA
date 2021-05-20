@@ -12,11 +12,10 @@ public class conexion {
     private static final String driver="com.mysql.jdbc.Driver";
     private static final String user="root";
     private static final String pass="";
-<<<<<<< HEAD:src/Modelo/conexion.java
+
     private static final String url="jdbc:mysql://localhost:3306/bakery";
-=======
-    private static final String url="jdbc:mysql://localhost:3306/pasteleria";
->>>>>>> 8a6b303cf13c0ad0f99e493101310453c62ef8be:src/Vista/conexion.java
+
+
     // Funcion que va conectarse a mi bd de mysql
     public void conector() {
         // Reseteamos a null la conexion a la bd
