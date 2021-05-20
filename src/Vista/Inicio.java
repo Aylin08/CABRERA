@@ -4,6 +4,8 @@ import Vista.CotizacionNormalForm;
 import Vista.FechasDisponiblesForm;
 import Vista.InventarioPastelesForm;
 import java.awt.Dimension;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JInternalFrame;
 
 /**
@@ -15,7 +17,16 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
-        
+        imgscalada();
+    }
+    
+    public void imgscalada(){
+        ImageIcon imgfondo = new ImageIcon(getClass().getResource("/Img/fondo.png"));
+        //procesodeescalado
+        Image img = imgfondo.getImage();
+        Image imgscaled = img.getScaledInstance(VentanaPrincipal.getWidth(),VentanaPrincipal.getHeight(),Image.SCALE_SMOOTH);
+        ImageIcon iconscaled = new ImageIcon(imgscaled);
+        VentanaPrincipal.setIcon(iconscaled);
     }
 
     @SuppressWarnings("unchecked")
@@ -48,7 +59,6 @@ public class Inicio extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 153, 51));
         setLocationByPlatform(true);
 
-        VentanaPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/fondo.png"))); // NOI18N
         VentanaPrincipal.setMaximumSize(new java.awt.Dimension(1539, 948));
 
         jMenuBar1.setBackground(new java.awt.Color(255, 153, 51));
@@ -180,11 +190,11 @@ public class Inicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 1348, Short.MAX_VALUE)
+            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 1348, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 900, Short.MAX_VALUE)
+            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
         );
 
         pack();
