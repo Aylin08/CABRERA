@@ -15,11 +15,11 @@ public class ClienteConexionBD implements CRUD {
     conexion cn= new conexion();
     PreparedStatement ps;
     ResultSet rs;
-    Cliente cliente=new Cliente();
+    
     
     public Cliente listarId(String Id_cliente)
     {
-  
+  Cliente cliente=new Cliente();
         String sql ="Select * from cliente where Id_cliente=?";
         try{
         con=cn.conector();
@@ -40,8 +40,9 @@ public class ClienteConexionBD implements CRUD {
     }
     @Override
     public List listar() {
+        Cliente cliente=new Cliente();
          List <Cliente> lista= new ArrayList<>();
-        String sql ="select * from cliente";
+        String sql ="Select * from cliente";
         try{
             con=cn.conector();
             ps=con.prepareStatement(sql);

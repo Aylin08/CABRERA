@@ -255,6 +255,8 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
     }
+    
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Fechas_disponibles;
