@@ -279,21 +279,21 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_actualizarActionPerformed
 
     private void btn_agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarActionPerformed
-        /*agregar();
+        agregar();
         limpiar();
         listar();
-        nuevo();*/
+        nuevo();
     }//GEN-LAST:event_btn_agregarActionPerformed
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
-      /* nuevo();*/
+      nuevo();
     }//GEN-LAST:event_btn_nuevoActionPerformed
 
     private void btn_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminarActionPerformed
-       /* eliminar();
+        eliminar();
         limpiar();
         listar();
-        nuevo();*/
+        nuevo();
     }//GEN-LAST:event_btn_eliminarActionPerformed
 
     private void tabla_clienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_clienteMouseClicked
