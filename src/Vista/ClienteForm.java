@@ -20,6 +20,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
   ClienteConexionBD ccbd= new ClienteConexionBD();
     int id;
   DefaultTableModel modelo= new DefaultTableModel();
+  
     public ClienteForm() {
         initComponents();
     }
@@ -285,7 +286,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     private void btn_agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarActionPerformed
         agregar();
         limpiar();
-        //listar();
+        listar();
         nuevo();
     }//GEN-LAST:event_btn_agregarActionPerformed
 
@@ -373,7 +374,6 @@ public class ClienteForm extends javax.swing.JInternalFrame {
         ob[1]=nom;
         ob[2]=dir;
         ob[3]=tel;
-        ob[4]=dir;
         ccbd.actualizar(ob);
       }
     }
