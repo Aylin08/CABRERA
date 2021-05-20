@@ -42,15 +42,13 @@ public class ClienteConexionBD implements CRUD {
     public List listar() {
         Cliente cliente=new Cliente();
          List <Cliente> lista= new ArrayList<>();
-        String sql ="Select * from cliente";
+        String sql ="SELECT * FROM cliente ";
         try{
             con=cn.conector();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while(rs.next())
-            {
-   
-              
+            {              
             cliente.setId_cliente(rs.getInt(0));
             cliente.setNombre_cliente(rs.getString(1));
             cliente.setTelefono(rs.getString(2));

@@ -203,12 +203,16 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
         tabla_cliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
                 "ID", "Nombre", "Telefono", "Dirección"
             }
         ));
+        tabla_cliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tabla_cliente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tabla_clienteMouseClicked(evt);
@@ -281,7 +285,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     private void btn_agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarActionPerformed
         agregar();
         limpiar();
-        listar();
+        //listar();
         nuevo();
     }//GEN-LAST:event_btn_agregarActionPerformed
 
