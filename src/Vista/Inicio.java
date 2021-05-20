@@ -75,6 +75,7 @@ public class Inicio extends javax.swing.JFrame {
         ayuda.setText("Ayuda");
         menu.add(ayuda);
 
+        clientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/opinion-del-cliente.png"))); // NOI18N
         clientes.setText("Clientes");
         clientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

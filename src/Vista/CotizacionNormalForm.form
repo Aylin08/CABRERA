@@ -81,22 +81,22 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lbl_estado7" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_observacion" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txt_stock2" min="-2" pref="132" max="-2" attributes="0"/>
+                          <Component id="txt_observaciones" min="-2" pref="132" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="lbl_nombre2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_nombre" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="txt_producto" min="-2" pref="107" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_direccion3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_nombre3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_direccion2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_topping" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_tamaño" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_sabor" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -129,7 +129,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lbl_nombre2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txt_producto" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -141,22 +141,22 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txt_sabor" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lbl_direccion2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_sabor" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbl_nombre3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_tamaño" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txt_tamaño" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbl_direccion3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_topping" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txt_extra" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbl_estado7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txt_stock2" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
+                      <Component id="lbl_observacion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_observaciones" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="75" max="32767" attributes="0"/>
               </Group>
@@ -187,12 +187,12 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lbl_nombre2">
+        <Component class="javax.swing.JLabel" name="lbl_nombre">
           <Properties>
             <Property name="text" type="java.lang.String" value="Producto:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txt_stock2">
+        <Component class="javax.swing.JTextField" name="txt_observaciones">
         </Component>
         <Component class="javax.swing.JComboBox" name="txt_tama&#xf1;o">
           <Properties>
@@ -211,7 +211,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lbl_nombre3">
+        <Component class="javax.swing.JLabel" name="lbl_tama&#xf1;o">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tama&#xf1;o:"/>
           </Properties>
@@ -235,7 +235,7 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lbl_direccion2">
+        <Component class="javax.swing.JLabel" name="lbl_sabor">
           <Properties>
             <Property name="text" type="java.lang.String" value="Sabor:"/>
           </Properties>
@@ -258,12 +258,12 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="lbl_estado7">
+        <Component class="javax.swing.JLabel" name="lbl_observacion">
           <Properties>
             <Property name="text" type="java.lang.String" value="Observaciones:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lbl_direccion3">
+        <Component class="javax.swing.JLabel" name="lbl_topping">
           <Properties>
             <Property name="text" type="java.lang.String" value="Toping Extra:"/>
           </Properties>
@@ -307,16 +307,16 @@
                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_estado4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_subtotal" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl_estado5" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="lbl_estado6" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_total" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton2" min="-2" pref="72" max="-2" attributes="0"/>
+                              <Component id="btn_aceptar" min="-2" pref="72" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -338,7 +338,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbl_estado4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_subtotal" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_subtotal" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -348,12 +348,12 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbl_estado6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_total" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_total" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_aceptar" min="-2" max="-2" attributes="0"/>
                           <Component id="btn_salir" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -362,7 +362,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lbl_estado4">
+            <Component class="javax.swing.JLabel" name="lbl_subtotal">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Img/bolsa-de-dinero.png"/>
@@ -383,7 +383,7 @@
                 <Property name="text" type="java.lang.String" value="Extra:      $"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lbl_estado6">
+            <Component class="javax.swing.JLabel" name="lbl_total">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Img/dinero.png"/>
@@ -401,7 +401,7 @@
                 <Property name="editable" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton2">
+            <Component class="javax.swing.JButton" name="btn_aceptar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Img/comprobado.png"/>
@@ -414,7 +414,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_aceptarActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn_salir">

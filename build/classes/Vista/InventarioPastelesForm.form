@@ -68,7 +68,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTabbedPane1" max="32767" attributes="0"/>
+                  <Component id="pane_registrar" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -76,14 +76,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
-                  <Component id="jTabbedPane1" min="-2" pref="595" max="-2" attributes="0"/>
+                  <Component id="pane_registrar" min="-2" pref="595" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+        <Container class="javax.swing.JTabbedPane" name="pane_registrar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="99" red="ff" type="rgb"/>
@@ -95,7 +95,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="jPanel1">
+            <Container class="javax.swing.JPanel" name="panel_principal">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -114,7 +114,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="jLabel3" min="-2" pref="182" max="-2" attributes="0"/>
+                          <Component id="lbl_registro" min="-2" pref="182" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="59" max="-2" attributes="0"/>
                       </Group>
@@ -127,33 +127,33 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_direccion2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_sabor" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl_nombre4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_nombre3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_producto" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Component id="txt_sabor" min="-2" pref="122" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="lbl_estado6" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbl_total" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="txt_total" min="-2" pref="59" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="txt_producto1" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
+                                              <Component id="txt_producto" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
                                               <Component id="txt_tamaño" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="lbl_estado4" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lbl_subtotal" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Component id="txt_subtotal" min="-2" pref="59" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="lbl_estado5" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lbl_extra" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Component id="txt_cobroextra" min="-2" pref="59" max="-2" attributes="0"/>
                                               </Group>
@@ -162,14 +162,14 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lbl_estado7" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_comentarios" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                                  <Component id="txt_stock2" max="32767" attributes="0"/>
+                                  <Component id="txt_comentarios" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="btn_nuevo1" min="-2" pref="133" max="-2" attributes="0"/>
+                              <Component id="btn_nuevo" min="-2" pref="133" max="-2" attributes="0"/>
                               <Component id="btn_agregar" min="-2" pref="134" max="-2" attributes="0"/>
                               <Component id="btn_Salir" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
                           </Group>
@@ -177,23 +177,23 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="196" max="-2" attributes="0"/>
-                          <Component id="lbl_no" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_noPedido" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txt_serie" min="-2" pref="104" max="-2" attributes="0"/>
+                          <Component id="txt_noPedido" min="-2" pref="104" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lbl_direccion3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_seleccionar" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="txt_extra" min="-2" pref="122" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbl_cliente" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jTextField1" max="32767" attributes="0"/>
+                                  <Component id="txt_cliente" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="449" max="32767" attributes="0"/>
@@ -206,43 +206,43 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel3" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="lbl_registro" min="-2" pref="39" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lbl_no" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_serie" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_noPedido" min="-2" max="-2" attributes="0"/>
+                              <Component id="txt_noPedido" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lbl_nombre3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_producto1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lbl_estado4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_producto" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txt_producto" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_subtotal" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txt_subtotal" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                          <Component id="btn_nuevo1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_nuevo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="lbl_nombre4" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_tamaño" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_estado5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_extra" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_cobroextra" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_direccion2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_sabor" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                           <Component id="txt_sabor" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="txt_total" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lbl_estado6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbl_total" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lbl_direccion3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_seleccionar" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_extra" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -254,13 +254,13 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_cliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txt_cliente" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txt_stock2" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                              <Component id="lbl_estado7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txt_comentarios" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="lbl_comentarios" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jPanel5" pref="189" max="32767" attributes="0"/>
@@ -270,7 +270,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel3">
+                <Component class="javax.swing.JLabel" name="lbl_registro">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="MV Boli" size="36" style="1"/>
@@ -288,12 +288,12 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_nombre3">
+                <Component class="javax.swing.JLabel" name="lbl_producto">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Producto:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="txt_producto1">
+                <Component class="javax.swing.JComboBox" name="txt_producto">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="3">
@@ -304,14 +304,14 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txt_producto1MouseClicked"/>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_producto1ActionPerformed"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txt_productoMouseClicked"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_productoActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_direccion2">
+                <Component class="javax.swing.JLabel" name="lbl_sabor">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Sabor:"/>
                   </Properties>
@@ -357,7 +357,7 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_direccion3">
+                <Component class="javax.swing.JLabel" name="lbl_seleccionar">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Toping Extra:"/>
                   </Properties>
@@ -378,14 +378,14 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_estado7">
+                <Component class="javax.swing.JLabel" name="lbl_comentarios">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Comentarios:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txt_stock2">
+                <Component class="javax.swing.JTextField" name="txt_comentarios">
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_estado4">
+                <Component class="javax.swing.JLabel" name="lbl_subtotal">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Img/bolsa-de-dinero.png"/>
@@ -398,7 +398,7 @@
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_estado5">
+                <Component class="javax.swing.JLabel" name="lbl_extra">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Img/extra.png"/>
@@ -408,7 +408,7 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_cobroextra">
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_estado6">
+                <Component class="javax.swing.JLabel" name="lbl_total">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Img/dinero.png"/>
@@ -421,7 +421,7 @@
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_no">
+                <Component class="javax.swing.JLabel" name="lbl_noPedido">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="12" style="0"/>
@@ -429,12 +429,12 @@
                     <Property name="text" type="java.lang.String" value="No. Pedido"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txt_serie">
+                <Component class="javax.swing.JTextField" name="txt_noPedido">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_serieActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_noPedidoActionPerformed"/>
                   </Events>
                 </Component>
                 <Container class="javax.swing.JPanel" name="jPanel5">
@@ -465,7 +465,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="tabla1">
+                        <Component class="javax.swing.JTable" name="tabla_registro">
                           <Properties>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                               <Table columnCount="8" rowCount="0">
@@ -528,19 +528,19 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabla1MouseClicked"/>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabla_registroMouseClicked"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
                   </SubComponents>
                 </Container>
-                <Component class="java.awt.Button" name="btn_nuevo1">
+                <Component class="java.awt.Button" name="btn_nuevo">
                   <Properties>
                     <Property name="label" type="java.lang.String" value="Nuevo"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_nuevo1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_nuevoActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="java.awt.Button" name="btn_agregar">
@@ -559,14 +559,14 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_SalirActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel5">
+                <Component class="javax.swing.JLabel" name="lbl_cliente">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Id cliente: "/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField1">
+                <Component class="javax.swing.JTextField" name="txt_cliente">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_clienteActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -603,22 +603,22 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_direccion5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_direccion4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_nombre6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_nombre5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_topping" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_sabores" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_tamaño" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_productos" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                               <Component id="txt_extra1" alignment="0" pref="122" max="32767" attributes="0"/>
-                                              <Component id="txt_sabor1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="txt_sabores" alignment="0" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="lbl_estado11" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbl_totales" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="txt_total1" min="-2" pref="59" max="-2" attributes="0"/>
+                                          <Component id="txt_totales" min="-2" pref="59" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -633,7 +633,7 @@
                                                   <Component id="txt_subtotal1" min="-2" pref="59" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="lbl_estado10" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lbl_extras" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Component id="txt_cobroextra1" min="-2" pref="59" max="-2" attributes="0"/>
                                               </Group>
@@ -660,16 +660,16 @@
                           <EmptySpace min="-2" pref="196" max="-2" attributes="0"/>
                           <Component id="lbl_no1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txt_serie1" min="-2" pref="104" max="-2" attributes="0"/>
+                          <Component id="txt_Pedido" min="-2" pref="104" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButton1" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="btn_buscar" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_clientes" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jTextField2" min="-2" pref="122" max="-2" attributes="0"/>
+                          <Component id="btn_clientes" min="-2" pref="122" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -689,35 +689,35 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="lbl_no1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txt_serie1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txt_Pedido" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btn_buscar" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lbl_nombre5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_productos" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_producto2" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl_estado9" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_subtotal1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lbl_nombre6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_tamaño" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_tamaño1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_estado10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_extras" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_cobroextra1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_direccion4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_sabores" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                          <Component id="txt_sabor1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txt_total1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lbl_estado11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txt_sabores" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txt_totales" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbl_totales" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lbl_direccion5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_topping" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_extra1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -734,8 +734,8 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_clientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btn_clientes" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -743,8 +743,8 @@
                               <Component id="lbl_estado8" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jPanel6" pref="189" max="32767" attributes="0"/>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel6" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -768,7 +768,7 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_nombre5">
+                <Component class="javax.swing.JLabel" name="lbl_productos">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Producto:"/>
                   </Properties>
@@ -791,12 +791,12 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_direccion4">
+                <Component class="javax.swing.JLabel" name="lbl_sabores">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Sabor:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="txt_sabor1">
+                <Component class="javax.swing.JComboBox" name="txt_sabores">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="5">
@@ -809,13 +809,13 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_sabor1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_saboresActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_nombre6">
+                <Component class="javax.swing.JLabel" name="lbl_tama&#xf1;o">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Tama&#xf1;o:"/>
                   </Properties>
@@ -837,7 +837,7 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_direccion5">
+                <Component class="javax.swing.JLabel" name="lbl_topping">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Toping Extra:"/>
                   </Properties>
@@ -878,7 +878,7 @@
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_estado10">
+                <Component class="javax.swing.JLabel" name="lbl_extras">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Img/extra.png"/>
@@ -888,7 +888,7 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_cobroextra1">
                 </Component>
-                <Component class="javax.swing.JLabel" name="lbl_estado11">
+                <Component class="javax.swing.JLabel" name="lbl_totales">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Img/dinero.png"/>
@@ -896,7 +896,7 @@
                     <Property name="text" type="java.lang.String" value="Total:      $"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txt_total1">
+                <Component class="javax.swing.JTextField" name="txt_totales">
                   <Properties>
                     <Property name="editable" type="boolean" value="false"/>
                   </Properties>
@@ -909,9 +909,9 @@
                     <Property name="text" type="java.lang.String" value="No. Pedido"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txt_serie1">
+                <Component class="javax.swing.JTextField" name="txt_Pedido">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_serie1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_PedidoActionPerformed"/>
                   </Events>
                 </Component>
                 <Container class="javax.swing.JPanel" name="jPanel6">
@@ -927,10 +927,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jScrollPane4" min="-2" pref="190" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jScrollPane4" alignment="0" pref="140" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -942,7 +939,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="tabla2">
+                        <Component class="javax.swing.JTable" name="tabla_editar">
                           <Properties>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                               <Table columnCount="8" rowCount="0">
@@ -1005,7 +1002,7 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabla2MouseClicked"/>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tabla_editarMouseClicked"/>
                           </Events>
                         </Component>
                       </SubComponents>
@@ -1044,22 +1041,22 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_eliminar2ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton1">
+                <Component class="javax.swing.JButton" name="btn_buscar">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Img/buscar.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_buscarActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel6">
+                <Component class="javax.swing.JLabel" name="lbl_clientes">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Id cliente: "/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField2">
+                <Component class="javax.swing.JTextField" name="btn_clientes">
                 </Component>
               </SubComponents>
             </Container>

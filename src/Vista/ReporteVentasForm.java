@@ -27,44 +27,44 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel6 = new javax.swing.JLabel();
-        lbl_no1 = new javax.swing.JLabel();
-        txt_serie1 = new javax.swing.JTextField();
+        lbl_reporte = new javax.swing.JLabel();
+        lbl_pedido = new javax.swing.JLabel();
+        txt_Pedido = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btn_buscar = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        tabla2 = new javax.swing.JTable();
-        jButton3 = new javax.swing.JButton();
+        tabla_ventas = new javax.swing.JTable();
+        btn_imprimir = new javax.swing.JButton();
         btn_salir = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 153, 0));
         setTitle("Reporte de ventas");
 
-        jLabel6.setFont(new java.awt.Font("MV Boli", 1, 36)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Reporte de Ventas");
+        lbl_reporte.setFont(new java.awt.Font("MV Boli", 1, 36)); // NOI18N
+        lbl_reporte.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_reporte.setText("Reporte de Ventas");
 
-        lbl_no1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        lbl_no1.setText("No. Pedido");
+        lbl_pedido.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lbl_pedido.setText("No. Pedido");
 
-        txt_serie1.setEditable(false);
-        txt_serie1.addActionListener(new java.awt.event.ActionListener() {
+        txt_Pedido.setEditable(false);
+        txt_Pedido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_serie1ActionPerformed(evt);
+                txt_PedidoActionPerformed(evt);
             }
         });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/logo.png"))); // NOI18N
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/buscar.png"))); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn_buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/buscar.png"))); // NOI18N
+        btn_buscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_buscarActionPerformed(evt);
             }
         });
 
-        tabla2.setModel(new javax.swing.table.DefaultTableModel(
+        tabla_ventas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -80,12 +80,12 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
                 return canEdit [columnIndex];
             }
         });
-        tabla2.addMouseListener(new java.awt.event.MouseAdapter() {
+        tabla_ventas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tabla2MouseClicked(evt);
+                tabla_ventasMouseClicked(evt);
             }
         });
-        jScrollPane4.setViewportView(tabla2);
+        jScrollPane4.setViewportView(tabla_ventas);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -104,7 +104,7 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/impresion (1).png"))); // NOI18N
+        btn_imprimir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/impresion (1).png"))); // NOI18N
 
         btn_salir.setBackground(new java.awt.Color(255, 255, 255));
         btn_salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cancelar.png"))); // NOI18N
@@ -125,24 +125,24 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbl_reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(208, 208, 208)
                         .addComponent(jLabel4)
                         .addGap(39, 39, 39))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(20, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lbl_no1)
+                .addComponent(lbl_pedido)
                 .addGap(18, 18, 18)
-                .addComponent(txt_serie1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txt_Pedido, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(btn_buscar)
                 .addGap(425, 425, 425))
             .addGroup(layout.createSequentialGroup()
                 .addGap(376, 376, 376)
-                .addComponent(jButton3)
+                .addComponent(btn_imprimir)
                 .addGap(18, 18, 18)
                 .addComponent(btn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -153,18 +153,18 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbl_reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
+                    .addComponent(btn_buscar)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lbl_no1)
-                        .addComponent(txt_serie1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(lbl_pedido)
+                        .addComponent(txt_Pedido, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3)
+                    .addComponent(btn_imprimir)
                     .addComponent(btn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -172,17 +172,17 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txt_serie1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_serie1ActionPerformed
+    private void txt_PedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_PedidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_serie1ActionPerformed
+    }//GEN-LAST:event_txt_PedidoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btn_buscarActionPerformed
 
-    private void tabla2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla2MouseClicked
+    private void tabla_ventasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_ventasMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_tabla2MouseClicked
+    }//GEN-LAST:event_tabla_ventasMouseClicked
 
     private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
         this.dispose();
@@ -190,15 +190,15 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_buscar;
+    private javax.swing.JButton btn_imprimir;
     private javax.swing.JButton btn_salir;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JLabel lbl_no1;
-    private javax.swing.JTable tabla2;
-    private javax.swing.JTextField txt_serie1;
+    private javax.swing.JLabel lbl_pedido;
+    private javax.swing.JLabel lbl_reporte;
+    private javax.swing.JTable tabla_ventas;
+    private javax.swing.JTextField txt_Pedido;
     // End of variables declaration//GEN-END:variables
 }

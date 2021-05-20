@@ -16,11 +16,11 @@ public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
         btn_salir = new javax.swing.JButton();
         ventana = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        Confirmar = new javax.swing.JButton();
-        btn_salir1 = new javax.swing.JButton();
+        btn_confirmar = new javax.swing.JButton();
+        btn_salirCalendario = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
-        tabla2 = new javax.swing.JTable();
-        rSCalendar1 = new rojeru_san.componentes.RSCalendar();
+        tabla_calendario = new javax.swing.JTable();
+        calendario = new rojeru_san.componentes.RSCalendar();
 
         btn_salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cancelar.png"))); // NOI18N
         btn_salir.setToolTipText("Rechaza cotización");
@@ -37,26 +37,26 @@ public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 153, 0));
 
-        Confirmar.setBackground(new java.awt.Color(255, 255, 255));
-        Confirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/comprobado.png"))); // NOI18N
-        Confirmar.setToolTipText("Acepta Cotización");
-        Confirmar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        Confirmar.addActionListener(new java.awt.event.ActionListener() {
+        btn_confirmar.setBackground(new java.awt.Color(255, 255, 255));
+        btn_confirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/comprobado.png"))); // NOI18N
+        btn_confirmar.setToolTipText("Acepta Cotización");
+        btn_confirmar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_confirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConfirmarActionPerformed(evt);
+                btn_confirmarActionPerformed(evt);
             }
         });
 
-        btn_salir1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cancelar.png"))); // NOI18N
-        btn_salir1.setToolTipText("Rechaza cotización");
-        btn_salir1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btn_salir1.addActionListener(new java.awt.event.ActionListener() {
+        btn_salirCalendario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cancelar.png"))); // NOI18N
+        btn_salirCalendario.setToolTipText("Rechaza cotización");
+        btn_salirCalendario.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_salirCalendario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_salir1ActionPerformed(evt);
+                btn_salirCalendarioActionPerformed(evt);
             }
         });
 
-        tabla2.setModel(new javax.swing.table.DefaultTableModel(
+        tabla_calendario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -72,16 +72,16 @@ public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
                 return canEdit [columnIndex];
             }
         });
-        tabla2.addMouseListener(new java.awt.event.MouseAdapter() {
+        tabla_calendario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tabla2MouseClicked(evt);
+                tabla_calendarioMouseClicked(evt);
             }
         });
-        jScrollPane4.setViewportView(tabla2);
+        jScrollPane4.setViewportView(tabla_calendario);
 
-        rSCalendar1.setColorBackground(new java.awt.Color(255, 153, 51));
-        rSCalendar1.setColorButtonHover(new java.awt.Color(255, 255, 51));
-        rSCalendar1.setColorDiaActual(new java.awt.Color(255, 102, 102));
+        calendario.setColorBackground(new java.awt.Color(255, 153, 51));
+        calendario.setColorButtonHover(new java.awt.Color(255, 255, 51));
+        calendario.setColorDiaActual(new java.awt.Color(255, 102, 102));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -93,11 +93,11 @@ public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(12, Short.MAX_VALUE)
-                .addComponent(rSCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(calendario, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btn_salir1, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
-                    .addComponent(Confirmar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btn_salirCalendario, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
+                    .addComponent(btn_confirmar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
@@ -106,12 +106,12 @@ public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(rSCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(calendario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(136, 136, 136)
-                        .addComponent(btn_salir1)
+                        .addComponent(btn_salirCalendario)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Confirmar)))
+                        .addComponent(btn_confirmar)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
                 .addContainerGap())
@@ -146,31 +146,31 @@ public class FechasDisponiblesForm extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmarActionPerformed
+    private void btn_confirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirmarActionPerformed
         JOptionPane.showConfirmDialog(null, "Desea registar pedido");
        // JOptionPane.showMessageDialog(null, "Fecha diponible");
-    }//GEN-LAST:event_ConfirmarActionPerformed
+    }//GEN-LAST:event_btn_confirmarActionPerformed
     private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
         this.dispose();
     }//GEN-LAST:event_btn_salirActionPerformed
 
-    private void btn_salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salir1ActionPerformed
+    private void btn_salirCalendarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirCalendarioActionPerformed
         this.dispose();
-    }//GEN-LAST:event_btn_salir1ActionPerformed
+    }//GEN-LAST:event_btn_salirCalendarioActionPerformed
 
-    private void tabla2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla2MouseClicked
+    private void tabla_calendarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_calendarioMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_tabla2MouseClicked
+    }//GEN-LAST:event_tabla_calendarioMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Confirmar;
+    private javax.swing.JButton btn_confirmar;
     private javax.swing.JButton btn_salir;
-    private javax.swing.JButton btn_salir1;
+    private javax.swing.JButton btn_salirCalendario;
+    private rojeru_san.componentes.RSCalendar calendario;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane4;
-    private rojeru_san.componentes.RSCalendar rSCalendar1;
-    private javax.swing.JTable tabla2;
+    private javax.swing.JTable tabla_calendario;
     private javax.swing.JPanel ventana;
     // End of variables declaration//GEN-END:variables
 }
