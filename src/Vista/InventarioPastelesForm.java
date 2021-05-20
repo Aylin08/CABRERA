@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Vista;
+import Modelo.conexion;
 import java.io.*;
 import javax.swing.*;
 /**
@@ -697,6 +698,9 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_SalirActionPerformed
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
+        conexion c= new conexion();
+        c.conector();
+        
         //nuevo();
     }//GEN-LAST:event_btn_nuevoActionPerformed
 
