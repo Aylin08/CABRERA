@@ -275,14 +275,9 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
 
     private void txt_productoActionPerformed(java.awt.event.ActionEvent evt)
     {
-         TextField txt_subtotal= new TextField();
-        String pre="--Precio--";
-        if(op!="Pastel")
-        {
-
-        } else  txt_subtotal.setText("200");
+        
     }
-        //GEN-LAST:event_txt_productoActionPerformed
+                                                    
 
     private void txt_saborActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_saborActionPerformed
         // TODO add your handling code here:
