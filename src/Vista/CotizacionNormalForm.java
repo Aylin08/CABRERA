@@ -296,8 +296,10 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
 
     if (JOptionPane.OK_OPTION == confirmado)
     { 
-        fd.setVisible(true);
-        in.CentrarVentana(fd);
+        FechasDisponiblesForm fed=new FechasDisponiblesForm();
+        fed.setVisible(true);
+        this.dispose();
+        in.CentrarVentana(fed);
          System.out.println("confirmado");}
     else{
             System.out.println("vale... no hago nada...");}
