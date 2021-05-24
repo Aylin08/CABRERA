@@ -228,12 +228,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="VentanaPrincipal" alignment="0" pref="1348" max="32767" attributes="0"/>
+          <Component id="VentanaPrincipal" alignment="0" pref="1535" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="VentanaPrincipal" pref="900" max="32767" attributes="0"/>
+          <Component id="VentanaPrincipal" pref="944" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -241,7 +241,7 @@
     <Component class="javax.swing.JLabel" name="VentanaPrincipal">
       <Properties>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1539, 948]"/>
+          <Dimension value="[1535, 944]"/>
         </Property>
       </Properties>
       <AuxValues>

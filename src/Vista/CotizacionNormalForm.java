@@ -298,7 +298,7 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
     { 
         FechasDisponiblesForm fed=new FechasDisponiblesForm();
         fed.setVisible(true);
-        this.dispose();
+        this.setVisible(false);
         in.CentrarVentana(fed);
          System.out.println("confirmado");}
     else{
