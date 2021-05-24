@@ -16,6 +16,7 @@ public class ClienteConexionBD implements CRUD {
     PreparedStatement ps;
     ResultSet rs;
     
+     Cliente co=new Cliente();
     
     public Cliente listarId(String Id_cliente)
     {

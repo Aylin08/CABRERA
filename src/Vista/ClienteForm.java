@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Vista;
 
 import Modelo.Cliente;
@@ -28,6 +23,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
         listar();
     }
 
+   
  void listar()
     {
         List <Cliente> lista=ccbd.listar();
@@ -35,7 +31,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
         Object [] ob= new Object[4];
         for(int i=0; i<lista.size(); i++)
         {
-            ob[0]=lista.get(i).getId_cliente();
+         ob[0]=lista.get(i).getId_cliente();
             ob[1]=lista.get(i).getNombre_cliente();
             ob[2]=lista.get(i).getTelefono();
             ob[3]=lista.get(i).getDireccion();
@@ -207,13 +203,10 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
         tabla_cliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "ID", "Nombre", "Telefono", "Dirección"
+                "Id_cliente", "Nombre", "Telefono", "Dirección"
             }
         ));
         tabla_cliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
