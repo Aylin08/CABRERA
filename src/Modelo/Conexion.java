@@ -5,10 +5,10 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class conexion {
-    // Declaramos la conexion a mysql
+public class Conexion {
+    // Declaramos la Conexion a mysql
     private static Connection con;
-    // Declaramos los datos de conexion a la bd
+    // Declaramos los datos de Conexion a la bd
     private static final String driver="com.mysql.jdbc.Driver";
     private static final String user="root";
     private static final String pass="";
@@ -17,20 +17,20 @@ public class conexion {
 
 
     // Funcion que va conectarse a mi bd de mysql
-    public Connection conector() throws SQLException{
+    public Connection Conector() throws SQLException{
        
         try{
             Class.forName(driver);
             // Nos conectamos a la bd
             con= (Connection) DriverManager.getConnection(url, user, pass);
-            // Si la conexion fue exitosa mostramos un mensaje de conexion exitosa
+            // Si la Conexion fue exitosa mostramos un mensaje de Conexion exitosa
             if (con!=null){
               System.out.println("aceptado");
             }
         }
-        // Si la conexion NO fue exitosa mostramos un mensaje de error
+        // Si la Conexion NO fue exitosa mostramos un mensaje de error
         catch (ClassNotFoundException | SQLException e){
-            Logger.getLogger(conexion.class.getName()).log(Level.SEVERE,null,e);
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE,null,e);
               System.out.println("error");
         }
           return con;

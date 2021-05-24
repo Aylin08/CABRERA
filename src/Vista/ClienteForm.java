@@ -24,7 +24,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     }
 
    
- void listar()
+     void listar()
     {
         List <Cliente> lista=ccbd.listar();
         modelo=(DefaultTableModel)tabla_cliente.getModel();

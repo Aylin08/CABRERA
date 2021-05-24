@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Vista;
-import Modelo.conexion;
+import Modelo.Conexion;
 import java.io.*;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -734,9 +729,9 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_SalirActionPerformed
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
-        conexion c= new conexion();
+        Conexion c= new Conexion();
         try {
-            c.conector();
+            c.Conector();
             
             //nuevo();
         } catch (SQLException ex) {

@@ -12,56 +12,57 @@ import java.util.List;
  */
 public class ClienteConexionBD implements CRUD {
     Connection con;
-    conexion cn= new conexion();
+    Conexion cn= new Conexion();
     PreparedStatement ps;
     ResultSet rs;
+    Cliente co=new Cliente();
     
-     Cliente co=new Cliente();
     
     public Cliente listarId(String Id_cliente)
     {
-  Cliente cliente=new Cliente();
+  Cliente clientes=new Cliente();
         String sql ="Select * from cliente where Id_cliente=?";
         try{
-        con=cn.conector();
+        con=cn.Conector();
         ps=con.prepareStatement(sql);
         ps.setString(0,Id_cliente);
         rs=ps.executeQuery();
         while(rs.next())
         {
-            cliente.setId_cliente(rs.getString(0));
-            cliente.setNombre_cliente(rs.getString(1));
-            cliente.setTelefono(rs.getString(2));
-            cliente.setDireccion(rs.getString(3));
+            clientes.setId_cliente(rs.getString(0));
+            clientes.setNombre_cliente(rs.getString(1));
+            clientes.setTelefono(rs.getString(2));
+            clientes.setDireccion(rs.getString(3));
               
         }
         } 
         catch(Exception e){}
-        return cliente;
+        return clientes;
     }
-    @Override
-    public List listar() {
-        Cliente cliente=new Cliente();
+  
+      public List listar() {
          List <Cliente> lista= new ArrayList<>();
-        String sql =" select *from cliente ";
+        String sql ="select * from cliente";
         try{
-            con=cn.conector();
+            con=cn.Conector();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while(rs.next())
-            {              
-            cliente.setId_cliente(rs.getString(0));
-            cliente.setNombre_cliente(rs.getString(1));
-            cliente.setTelefono(rs.getString(2));
-            cliente.setDireccion(rs.getString(3));
-                
-            
-              lista.add(cliente);
+            {
+              Cliente c=new Cliente();
+              
+             c.setId_cliente(rs.getString(0));
+             c.setNombre_cliente(rs.getString(1));
+             c.setTelefono(rs.getString(2));
+             c.setDireccion(rs.getString(3));
+              
+              lista.add(c);
+              
               
             }
         }
         catch(Exception e){
-            
+             System.out.println("no se puede imprimir los datos de la tabla");
         }
         return lista;
     }
@@ -71,7 +72,7 @@ public class ClienteConexionBD implements CRUD {
         int r=0;
       String sql="insert into cliente (Id_cliente,Nombre_cliente,Telefono,Direccion) values (?,?,?,?)";
       try{
-          con=cn.conector();
+          con=cn.Conector();
           ps=con.prepareStatement(sql);
           ps.setObject(1, o[0]);
           ps.setObject(2, o[1]);
@@ -93,7 +94,7 @@ public class ClienteConexionBD implements CRUD {
            int r=0;
       String sql="update cliente set Id_cliente=? ,Nombre_cliente=?, Telefono=?, Direccion=? where Id_cliente=?";
       try{
-          con=cn.conector();
+          con=cn.Conector();
           ps=con.prepareStatement(sql);
           ps.setObject(1, o[0]);
           ps.setObject(2, o[1]);
@@ -115,7 +116,7 @@ public class ClienteConexionBD implements CRUD {
  
       String sql="delete from cliente where Id_cliente=?";
       try{
-          con=cn.conector();
+          con=cn.Conector();
           ps=con.prepareStatement(sql);
           ps.setString(0, id);
           ps.executeUpdate();
