@@ -59,7 +59,7 @@ public class Inicio extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 153, 51));
         setLocationByPlatform(true);
 
-        VentanaPrincipal.setMaximumSize(new java.awt.Dimension(1539, 948));
+        VentanaPrincipal.setMaximumSize(new java.awt.Dimension(1535, 944));
 
         jMenuBar1.setBackground(new java.awt.Color(255, 153, 51));
         jMenuBar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -190,11 +190,11 @@ public class Inicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 1348, Short.MAX_VALUE)
+            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 1535, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
+            .addComponent(VentanaPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 944, Short.MAX_VALUE)
         );
 
         pack();
