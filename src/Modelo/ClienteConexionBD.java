@@ -11,7 +11,7 @@ import java.util.List;
  * @author AYLIN
  */
 public class ClienteConexionBD implements CRUD {
-     Connection con;
+    Connection con;
     conexion cn= new conexion();
     PreparedStatement ps;
     ResultSet rs;
@@ -28,7 +28,7 @@ public class ClienteConexionBD implements CRUD {
         rs=ps.executeQuery();
         while(rs.next())
         {
-            cliente.setId_cliente(rs.getInt(0));
+            cliente.setId_cliente(rs.getString(0));
             cliente.setNombre_cliente(rs.getString(1));
             cliente.setTelefono(rs.getString(2));
             cliente.setDireccion(rs.getString(3));
@@ -42,14 +42,14 @@ public class ClienteConexionBD implements CRUD {
     public List listar() {
         Cliente cliente=new Cliente();
          List <Cliente> lista= new ArrayList<>();
-        String sql ="SELECT * FROM cliente ";
+        String sql =" select *from cliente ";
         try{
             con=cn.conector();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while(rs.next())
             {              
-            cliente.setId_cliente(rs.getInt(0));
+            cliente.setId_cliente(rs.getString(0));
             cliente.setNombre_cliente(rs.getString(1));
             cliente.setTelefono(rs.getString(2));
             cliente.setDireccion(rs.getString(3));
@@ -110,13 +110,13 @@ public class ClienteConexionBD implements CRUD {
     }
 
     @Override
-    public void eliminar(int id) {
-           int r=0;
+    public void eliminar(String id) {
+ 
       String sql="delete from cliente where Id_cliente=?";
       try{
           con=cn.conector();
           ps=con.prepareStatement(sql);
-          ps.setInt(0, id);
+          ps.setString(0, id);
           ps.executeUpdate();
       }
       catch(Exception e)

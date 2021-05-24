@@ -18,11 +18,14 @@ import javax.swing.table.DefaultTableModel;
 public class ClienteForm extends javax.swing.JInternalFrame {
 
   ClienteConexionBD ccbd= new ClienteConexionBD();
-    int id;
-  DefaultTableModel modelo= new DefaultTableModel();
+  Cliente cl= new Cliente();
   
+  DefaultTableModel modelo= new DefaultTableModel();
+    
+    
     public ClienteForm() {
         initComponents();
+        listar();
     }
 
  void listar()
@@ -308,13 +311,13 @@ public class ClienteForm extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this,"Debe seleccionar una fila");
         }
         else{
-            id= Integer.parseInt(tabla_cliente.getValueAt(fila,0).toString());
+            String id_cliente=tabla_cliente.getValueAt(fila, 0).toString();
             String nom=tabla_cliente.getValueAt(fila, 1).toString();
             String tel=tabla_cliente.getValueAt(fila, 2).toString();
             String dir=tabla_cliente.getValueAt(fila, 3).toString();
         
 
-            //txt_cliente.setText(id);
+            txt_cliente.setText(id_cliente);
             txt_nombre.setText(nom);
             txt_telefono.setText(tel);
             txt_direccion.setText(dir);
@@ -353,7 +356,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
       {
           JOptionPane.showMessageDialog(this, "Debe selecionar una fila");
       }else{
-        int ids=Integer.parseInt(tabla_cliente.getValueAt(fila,0).toString());
+        String ids=tabla_cliente.getValueAt(fila,0).toString();
       ccbd.eliminar(ids);
       }
     }
