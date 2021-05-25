@@ -7,6 +7,7 @@ import java.awt.Dimension;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JInternalFrame;
+import javax.swing.JFrame;
 
 /**
  *
@@ -210,7 +211,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void normalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_normalActionPerformed
         CotizacionNormalForm cn= new CotizacionNormalForm();
-        CentrarVentana(cn);
+        CentrarVentanaFrame(cn);
     }//GEN-LAST:event_normalActionPerformed
 
     private void Fechas_disponiblesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fechas_disponiblesActionPerformed
@@ -256,6 +257,14 @@ public class Inicio extends javax.swing.JFrame {
         //frame.setLocation((dimension.width - DFrame.height)/2,(dimension.height-DFrame.width)/2);
         frame.show();
     } 
+  public void CentrarVentanaFrame(JFrame frame){
+        VentanaPrincipal.add(frame);
+        Dimension dimension=VentanaPrincipal.getSize();
+        Dimension DFrame=frame.getSize();
+         setLocationRelativeTo(null); 
+        //frame.setLocation((dimension.width - DFrame.height)/2,(dimension.height-DFrame.width)/2);
+        frame.show();
+    }
  
     public static void main(String args[]) {
         
