@@ -25,14 +25,13 @@ public class ClienteConexionBD implements CRUD {
         try{
         con=cn.Conector();
         ps=con.prepareStatement(sql);
-        ps.setString(0,Id_cliente);
         rs=ps.executeQuery();
         while(rs.next())
         {
-            clientes.setId_cliente(rs.getString(0));
-            clientes.setNombre_cliente(rs.getString(1));
-            clientes.setTelefono(rs.getString(2));
-            clientes.setDireccion(rs.getString(3));
+            clientes.setId_cliente(rs.getInt(1));
+            clientes.setNombre_cliente(rs.getString(2));
+            clientes.setTelefono(rs.getString(3));
+            clientes.setDireccion(rs.getString(4));
               
         }
         } 
@@ -51,10 +50,10 @@ public class ClienteConexionBD implements CRUD {
             {
               Cliente c=new Cliente();
               
-             c.setId_cliente(rs.getString(0));
-             c.setNombre_cliente(rs.getString(1));
-             c.setTelefono(rs.getString(2));
-             c.setDireccion(rs.getString(3));
+             c.setId_cliente(rs.getInt(1));
+             c.setNombre_cliente(rs.getString(2));
+             c.setTelefono(rs.getString(3));
+             c.setDireccion(rs.getString(4));
               
               lista.add(c);
               
@@ -92,7 +91,7 @@ public class ClienteConexionBD implements CRUD {
     @Override
     public int actualizar(Object [] o) {
            int r=0;
-      String sql="update cliente set Id_cliente=? ,Nombre_cliente=?, Telefono=?, Direccion=? where Id_cliente=?";
+      String sql="update cliente set  Nombre_cliente=?, Telefono=?, Direccion=? where Id_cliente=?";
       try{
           con=cn.Conector();
           ps=con.prepareStatement(sql);
@@ -112,13 +111,13 @@ public class ClienteConexionBD implements CRUD {
     }
 
     @Override
-    public void eliminar(String id) {
+    public void eliminar(int id) {
  
       String sql="delete from cliente where Id_cliente=?";
       try{
           con=cn.Conector();
           ps=con.prepareStatement(sql);
-          ps.setString(0, id);
+          ps.setInt(1, id);
           ps.executeUpdate();
       }
       catch(Exception e)
