@@ -39,6 +39,7 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
         txt_total = new javax.swing.JTextField();
         btn_aceptar = new javax.swing.JButton();
         btn_salir = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Seleccionar--", "Pastel", "Cupcakes", "Gelatinas", " " }));
 
@@ -178,17 +179,20 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jButton1.setText("🖨");
+        jButton1.setToolTipText("");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ventanaLayout = new javax.swing.GroupLayout(ventana);
         ventana.setLayout(ventanaLayout);
         ventanaLayout.setHorizontalGroup(
             ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ventanaLayout.createSequentialGroup()
                 .addGroup(ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ventanaLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbl_observacion)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txt_observaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(ventanaLayout.createSequentialGroup()
                         .addGroup(ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(ventanaLayout.createSequentialGroup()
@@ -206,7 +210,17 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
                                     .addComponent(txt_tamaño, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(txt_extra, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1))
+                    .addGroup(ventanaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lbl_observacion)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_observaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(ventanaLayout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addComponent(jButton1)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,11 +253,13 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
                 .addGroup(ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_topping)
                     .addComponent(txt_extra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(69, 69, 69)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addGap(28, 28, 28)
                 .addGroup(ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_observacion)
                     .addComponent(txt_observaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(75, Short.MAX_VALUE))
+                .addContainerGap(77, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(ventanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(ventanaLayout.createSequentialGroup()
@@ -307,6 +323,64 @@ public class CotizacionNormalForm extends javax.swing.JInternalFrame {
       // in.CentrarVentana(fd);
           
     }//GEN-LAST:event_btn_aceptarActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+      String total3;
+        int total=0;
+        int total2=0;
+        String op= (String) txt_producto.getSelectedItem();
+        String op2= (String) txt_sabor.getSelectedItem();
+        String op3= (String) txt_tamaño.getSelectedItem();
+        String op4= (String) txt_extra.getSelectedItem();
+        
+     if(op=="Cupcakes")
+     {
+         total=100;
+         
+     }else if(op=="Pastel")
+     {
+         total=200;
+ 
+     }
+         if(op2=="Chocolate")
+         {total=total+30;}
+         else if(op2=="Vainilla")
+         {total=total+25;}
+          else if(op2=="Zanahoria")
+         {total=total+35;}
+          else if(op2=="Fresa")
+         {total=total+50;}
+             if(op3=="Individual")
+             {total=total+50;}
+             else if(op3=="Mediano")
+                {total=total+100;}
+              else if(op3=="Media plancha")
+                {total=total+120;}
+              else if(op3=="Plancha completa")
+                {total=total+200;}
+                 if(op4=="Nuez")
+                 {
+                 total2=30;  
+                 total3=Integer.toString(total2);
+                 txt_cobroextra.setText(total3);}
+                 else if(op4=="Queso extra")
+                {total2=50;  
+                 total3=Integer.toString(total2);
+                 txt_cobroextra.setText(total3);}
+                  else if(op4=="Relleno de queso")
+                {total2=70;  
+                 total3=Integer.toString(total2);
+                 txt_cobroextra.setText(total3);}
+                  else if(op4=="Cholate extra")
+                {total2=60;  
+                 total3=Integer.toString(total2);
+                 txt_cobroextra.setText(total3);}
+                     total3=Integer.toString(total);
+                     txt_subtotal.setText(total3);
+                    total= total2+total;
+                    total3=Integer.toString(total);
+                    txt_total.setText(total3);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     void producto()
@@ -373,6 +447,7 @@ void Extra()
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_aceptar;
     private javax.swing.JButton btn_salir;
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
