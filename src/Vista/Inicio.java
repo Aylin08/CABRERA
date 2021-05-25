@@ -216,7 +216,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void Fechas_disponiblesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fechas_disponiblesActionPerformed
        FechasDisponiblesForm fd= new FechasDisponiblesForm();
-       CentrarVentana(fd);
+       CentrarVentanaFrame(fd);
     }//GEN-LAST:event_Fechas_disponiblesActionPerformed
 
     private void nuevo_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevo_editarActionPerformed
