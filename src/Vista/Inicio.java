@@ -240,8 +240,8 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_reporte_inventarioActionPerformed
 
     private void materia_primaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materia_primaActionPerformed
-        ExistenciasForm EF =new ExistenciasForm();
-        CentrarVentana(EF);
+        //ExistenciasForm EF =new ExistenciasForm();
+        //CentrarVentana(EF);
     }//GEN-LAST:event_materia_primaActionPerformed
 
     private void clientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientesActionPerformed
