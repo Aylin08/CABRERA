@@ -211,6 +211,8 @@ public class Inicio extends javax.swing.JFrame {
 
     private void normalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_normalActionPerformed
         CotizacionNormalForm cn= new CotizacionNormalForm();
+        cn.setSize(650, 650);
+        cn.setVisible(true);
         CentrarVentanaFrame(cn);
     }//GEN-LAST:event_normalActionPerformed
 
