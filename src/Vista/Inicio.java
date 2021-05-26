@@ -213,7 +213,7 @@ public class Inicio extends javax.swing.JFrame {
         CotizacionNormalForm cn= new CotizacionNormalForm();
         cn.setSize(650, 650);
         cn.setVisible(true);
-      //  CentrarVentanaFrame(cn);
+        CentrarVentanaFrame(cn);
     }//GEN-LAST:event_normalActionPerformed
 
     private void Fechas_disponiblesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fechas_disponiblesActionPerformed
