@@ -7,7 +7,8 @@ public class Pedidos {
     String tamaño;
     String topping;
     float   total;
-    String Fecha;
+    String Fecha_actual;
+    String Fecha_entrega;
     int Id_cliente;
     String comentarios;
      String serie;
@@ -15,7 +16,7 @@ public class Pedidos {
     public Pedidos(){
         
     }
-    public Pedidos(int Id_pedido, String Producto, String Sabor, String tamaño, String topping, float total, String Fecha,  int Id_cliente, String comentarios,  String serie)
+    public Pedidos(int Id_pedido, String Producto, String Sabor, String tamaño, String topping, float total, String Fecha_actual,String Fecha_entrega,  int Id_cliente, String comentarios,  String serie)
     {
     this.Id_pedido=Id_pedido;
     this.Producto=Producto;
@@ -23,11 +24,28 @@ public class Pedidos {
     this.tamaño=tamaño;
     this.topping=topping;
     this.total=total;
-    this.Fecha=Fecha;
+    this.Fecha_entrega=Fecha_entrega;
+    this.Fecha_actual=Fecha_actual;
     this.Id_cliente= Id_cliente;
     this.comentarios= comentarios;
     this.serie=serie;
         
+    }
+
+    public String getFecha_actual() {
+        return Fecha_actual;
+    }
+
+    public void setFecha_actual(String Fecha_actual) {
+        this.Fecha_actual = Fecha_actual;
+    }
+
+    public String getFecha_entrega() {
+        return Fecha_entrega;
+    }
+
+    public void setFecha_entrega(String Fecha_entrega) {
+        this.Fecha_entrega = Fecha_entrega;
     }
 
     public String getSerie() {
@@ -84,14 +102,6 @@ public class Pedidos {
 
     public void setTotal(float total) {
         this.total = total;
-    }
-
-    public String getFecha() {
-        return Fecha;
-    }
-
-    public void setFecha(String Fecha) {
-        this.Fecha = Fecha;
     }
 
     public int getId_cliente() {

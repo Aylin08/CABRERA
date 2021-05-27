@@ -73,9 +73,10 @@ public class PedidosConexionBD implements CRUD {
              ped.setTamaño(rs.getString(3));
              ped.setTopping(rs.getString(5));
              ped.setTotal(rs.getFloat(6));
-             ped.setFecha(rs.getString(7));
-             ped.setId_cliente(rs.getInt(8));
-             ped.setComentarios(rs.getString(9));
+             ped.setFecha_actual(rs.getString(7));
+             ped.setFecha_entrega(rs.getString(8));
+             ped.setId_cliente(rs.getInt(9));
+             ped.setComentarios(rs.getString(10));
              
              
              
@@ -93,7 +94,7 @@ public class PedidosConexionBD implements CRUD {
     @Override
     public int add(Object[] o) {
         int r=0;
-      String sql="insert into pedidos (Id_pedido, Producto, Sabor, tamaño, topping, Total, Fecha, Id_cliente, Comentarios) values (?,?,?,?,?,?,?,?,?)";
+      String sql="insert into pedidos (Id_pedido, Producto, Sabor, tamaño, topping, Total, Fecha_actual, Fecha_entrega, Id_cliente, Comentarios) values (?,?,?,?,?,?,?,?,?,?)";
       try{
           con=cn.Conector();
           ps=con.prepareStatement(sql);
@@ -106,6 +107,7 @@ public class PedidosConexionBD implements CRUD {
           ps.setObject(7, o[6]);
           ps.setObject(8, o[7]);
           ps.setObject(9, o[8]);
+          ps.setObject(10, o[9]);
           r= ps.executeUpdate();
         
           

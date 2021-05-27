@@ -119,90 +119,98 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPanel5" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="378" max="-2" attributes="0"/>
-                          <Component id="txt_noPedido" min="-2" pref="104" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jPanel5" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Component id="txt_cliente" alignment="1" min="-2" pref="122" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="lbl_seleccionar" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txt_extra" min="-2" pref="122" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="lbl_sabor" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lbl_nombre4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lbl_producto" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lbl_cliente" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <Component id="txt_sabor" min="-2" pref="122" max="-2" attributes="0"/>
-                                                      <EmptySpace max="32767" attributes="0"/>
-                                                      <Component id="lbl_total" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="txt_total" min="-2" pref="59" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="txt_producto" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
-                                                          <Component id="txt_tamaño" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Group type="102" alignment="0" attributes="0">
-                                                              <Component id="lbl_extra" min="-2" max="-2" attributes="0"/>
-                                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                              <Component id="txt_cobroextra" min="-2" pref="59" max="-2" attributes="0"/>
-                                                          </Group>
-                                                          <Group type="102" alignment="0" attributes="0">
-                                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                                  <Component id="lbl_noPedido" min="-2" max="-2" attributes="0"/>
-                                                                  <Component id="lbl_subtotal" min="-2" max="-2" attributes="0"/>
-                                                              </Group>
-                                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                              <Component id="txt_subtotal" min="-2" pref="59" max="-2" attributes="0"/>
-                                                          </Group>
-                                                      </Group>
-                                                  </Group>
-                                              </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
-                                                  <Component id="lbl_fecha1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                                                  <Component id="txt_fecha1" min="-2" pref="122" max="-2" attributes="0"/>
+                                                  <Component id="lbl_comentarios" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                                  <Component id="txt_comentarios" max="32767" attributes="0"/>
+                                                  <EmptySpace min="85" pref="85" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="lbl_sabor" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lbl_nombre4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lbl_producto" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lbl_cliente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                                  <Group type="102" attributes="0">
+                                                                      <Component id="txt_sabor" min="-2" pref="122" max="-2" attributes="0"/>
+                                                                      <EmptySpace max="32767" attributes="0"/>
+                                                                      <Component id="lbl_total" min="-2" max="-2" attributes="0"/>
+                                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                                      <Component id="txt_total" min="-2" pref="59" max="-2" attributes="0"/>
+                                                                  </Group>
+                                                                  <Group type="102" attributes="0">
+                                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                                          <Component id="txt_producto" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
+                                                                          <Component id="txt_tamaño" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
+                                                                      </Group>
+                                                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                                          <Group type="102" alignment="0" attributes="0">
+                                                                              <Component id="lbl_extra" min="-2" max="-2" attributes="0"/>
+                                                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                                              <Component id="txt_cobroextra" min="-2" pref="59" max="-2" attributes="0"/>
+                                                                          </Group>
+                                                                          <Group type="102" alignment="0" attributes="0">
+                                                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                                                  <Component id="lbl_noPedido" min="-2" max="-2" attributes="0"/>
+                                                                                  <Component id="lbl_subtotal" min="-2" max="-2" attributes="0"/>
+                                                                              </Group>
+                                                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                                              <Component id="txt_subtotal" min="-2" pref="59" max="-2" attributes="0"/>
+                                                                          </Group>
+                                                                      </Group>
+                                                                  </Group>
+                                                              </Group>
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
+                                                                  <Component id="lbl_fecha3" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="txt_entrega1" min="-2" pref="122" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace min="-2" pref="368" max="-2" attributes="0"/>
+                                                          <Component id="txt_noPedido" min="-2" pref="104" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace pref="31" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="btn_agregar" min="-2" pref="134" max="-2" attributes="0"/>
+                                              <Component id="btn_nuevo" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="btn_Salir" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="btn_calculador" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="lbl_fecha1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="lbl_comentarios" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                                          <Component id="txt_comentarios" max="32767" attributes="0"/>
-                                      </Group>
                                   </Group>
-                                  <EmptySpace min="85" pref="85" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="btn_agregar" min="-2" pref="134" max="-2" attributes="0"/>
-                                      <Component id="btn_nuevo" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btn_Salir" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btn_calculador" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                  <Component id="txt_cliente" alignment="1" min="-2" pref="122" max="-2" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="lbl_seleccionar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txt_extra" min="-2" pref="122" max="-2" attributes="0"/>
-                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="txt_fecha1" min="-2" pref="122" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="155" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -218,6 +226,8 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lbl_noPedido" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txt_noPedido" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txt_fecha1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_fecha1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -250,13 +260,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="btn_Salir" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                          <Component id="lbl_fecha1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txt_fecha1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="btn_calculador" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="btn_calculador" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -267,12 +271,24 @@
                                           <Component id="lbl_total" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lbl_seleccionar" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txt_extra" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="lbl_seleccionar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txt_extra" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="lbl_fecha3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txt_entrega1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="txt_cliente" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbl_cliente" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -487,20 +503,26 @@
                         <Component class="javax.swing.JTable" name="tabla_registro">
                           <Properties>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                              <Table columnCount="9" rowCount="0">
+                              <Table columnCount="10" rowCount="0">
                                 <Column editable="false" title="No. Pedido" type="java.lang.Object"/>
                                 <Column editable="false" title="Producto" type="java.lang.Object"/>
                                 <Column editable="false" title="Sabor" type="java.lang.Object"/>
                                 <Column editable="false" title="Tama&#xf1;o" type="java.lang.Object"/>
                                 <Column editable="false" title="Toping extra" type="java.lang.Object"/>
                                 <Column editable="false" title="Total" type="java.lang.Object"/>
-                                <Column editable="false" title="Fecha" type="java.lang.Object"/>
+                                <Column editable="false" title="Fecha_actual" type="java.lang.Object"/>
+                                <Column editable="false" title="Fecha_entrega" type="java.lang.Object"/>
                                 <Column editable="false" title="Id_cliente" type="java.lang.Object"/>
                                 <Column editable="false" title="Comentarios" type="java.lang.Object"/>
                               </Table>
                             </Property>
                             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                               <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
                                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                                   <Title/>
                                   <Editor/>
@@ -605,10 +627,17 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lbl_fecha1">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Fecha:"/>
+                    <Property name="text" type="java.lang.String" value="Fecha actual:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_fecha1">
+                </Component>
+                <Component class="javax.swing.JTextField" name="txt_entrega1">
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbl_fecha3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Fecha entrega:"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
@@ -670,9 +699,7 @@
                                                   <Component id="lbl_productos" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="txt_producto2" min="-2" pref="122" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="lbl_fecha" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -692,9 +719,13 @@
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Component id="txt_subtotal1" min="-2" pref="57" max="-2" attributes="0"/>
                                               </Group>
-                                              <Component id="txt_fecha" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="lbl_fecha2" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="txt_entrega" min="-2" pref="122" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace pref="214" max="32767" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -722,7 +753,11 @@
                           <Component id="txt_Pedido" min="-2" pref="104" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btn_buscar" min="-2" pref="45" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                          <Component id="lbl_fecha" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="txt_fecha" min="-2" pref="122" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="33" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -734,88 +769,104 @@
                               <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel4" alignment="1" min="-2" pref="39" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lbl_no1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txt_Pedido" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="btn_buscar" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="lbl_no1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txt_Pedido" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="btn_buscar" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="txt_producto2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lbl_productos" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="lbl_tamaño" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txt_tamaño1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="txt_sabores" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lbl_sabores" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="lbl_topping" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txt_extra1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="lbl_totales" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txt_totales" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="txt_clientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lbl_clientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="lbl_fecha2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txt_entrega" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="3" attributes="0">
+                                                      <Component id="lbl_estado9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="txt_subtotal1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="btn_actualizar1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="btn_eliminar2" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="btn_Salir1" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="lbl_extras" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txt_cobroextra1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="txt_producto2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_productos" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbl_estado8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txt_com" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="jPanel6" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="lbl_fecha" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="txt_fecha" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="lbl_tamaño" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txt_tamaño1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="txt_sabores" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_sabores" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="lbl_topping" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="txt_extra1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="lbl_totales" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="txt_totales" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="txt_clientes" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_clientes" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="lbl_estado9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txt_subtotal1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="btn_actualizar1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btn_eliminar2" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btn_Salir1" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="lbl_extras" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txt_cobroextra1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lbl_estado8" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_com" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Component id="jPanel6" max="32767" attributes="0"/>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -995,7 +1046,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane4" alignment="0" pref="134" max="32767" attributes="0"/>
+                          <Component id="jScrollPane4" alignment="0" pref="140" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -1010,20 +1061,26 @@
                         <Component class="javax.swing.JTable" name="tabla_editar">
                           <Properties>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                              <Table columnCount="9" rowCount="0">
+                              <Table columnCount="10" rowCount="0">
                                 <Column editable="false" title="No. Pedido" type="java.lang.Object"/>
                                 <Column editable="false" title="Producto" type="java.lang.Object"/>
                                 <Column editable="false" title="Sabor" type="java.lang.Object"/>
                                 <Column editable="false" title="Tama&#xf1;o" type="java.lang.Object"/>
                                 <Column editable="false" title="Toping extra" type="java.lang.Object"/>
                                 <Column editable="false" title="Total" type="java.lang.Object"/>
-                                <Column editable="false" title="Fecha" type="java.lang.Object"/>
+                                <Column editable="false" title="Fecha_actual" type="java.lang.Object"/>
+                                <Column editable="false" title="Fecha_entrega" type="java.lang.Object"/>
                                 <Column editable="false" title="Id_cliente" type="java.lang.Object"/>
                                 <Column editable="false" title="Comentarios" type="java.lang.Object"/>
                               </Table>
                             </Property>
                             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                               <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
                                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                                   <Title/>
                                   <Editor/>
@@ -1135,7 +1192,14 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="lbl_fecha">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Fecha:"/>
+                    <Property name="text" type="java.lang.String" value="Fecha actual:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txt_entrega">
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbl_fecha2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Fecha entrega:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_fecha">
