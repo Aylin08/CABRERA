@@ -16,14 +16,14 @@ import javax.swing.table.DefaultTableModel;
 public class InventarioPastelesForm extends javax.swing.JInternalFrame {
 
     PedidosConexionBD p= new PedidosConexionBD();
-   Pedidos pe= new Pedidos();
+    Pedidos pe= new Pedidos();
     DefaultTableModel modelo= new DefaultTableModel();
-    
+   
     void listar()
     {
         List <Pedidos> lista=p.listar();
         modelo=(DefaultTableModel)tabla_registro.getModel();
-        Object [] ob= new Object[8];
+        Object [] ob= new Object[9];
         for(int i=0; i<lista.size(); i++)
         {
             ob[0]=lista.get(i).getId_pedido();
@@ -39,10 +39,32 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         }
         tabla_registro.setModel(modelo);
     }
+     void listar1()
+    {
+        List <Pedidos> lista=p.listar();
+        modelo=(DefaultTableModel)tabla_editar.getModel();
+        Object [] ob= new Object[9];
+        for(int i=0; i<lista.size(); i++)
+        {
+            ob[0]=lista.get(i).getId_pedido();
+            ob[1]=lista.get(i).getProducto();
+            ob[2]=lista.get(i).getSabor();
+            ob[3]=lista.get(i).getTamaño();
+            ob[4]=lista.get(i).getTopping();
+            ob[5]=lista.get(i).getTotal();
+            ob[6]=lista.get(i).getFecha();
+            ob[7]=lista.get(i).getId_cliente();
+            ob[8]=lista.get(i).getComentarios();
+            modelo.addRow(ob);
+        }
+        tabla_editar.setModel(modelo);
+    }
     public InventarioPastelesForm() {
         initComponents();
         generarSerie();
         fecha();
+        listar();
+        listar1();
     }
     void fecha(){
         Calendar calendar=new GregorianCalendar();
@@ -112,7 +134,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         lbl_topping = new javax.swing.JLabel();
         txt_extra1 = new javax.swing.JComboBox<>();
         lbl_estado8 = new javax.swing.JLabel();
-        txt_stock3 = new javax.swing.JTextField();
+        txt_com = new javax.swing.JTextField();
         lbl_estado9 = new javax.swing.JLabel();
         txt_subtotal1 = new javax.swing.JTextField();
         lbl_extras = new javax.swing.JLabel();
@@ -124,13 +146,12 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         jPanel6 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         tabla_editar = new javax.swing.JTable();
-        btn_agregar1 = new java.awt.Button();
         btn_actualizar1 = new java.awt.Button();
         btn_Salir1 = new java.awt.Button();
         btn_eliminar2 = new java.awt.Button();
         btn_buscar = new javax.swing.JButton();
         lbl_clientes = new javax.swing.JLabel();
-        btn_clientes = new javax.swing.JTextField();
+        txt_clientes = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         lbl_fecha = new javax.swing.JLabel();
         txt_fecha = new javax.swing.JTextField();
@@ -493,11 +514,11 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "No. Pedido", "Producto", "Tamaño", "Sabor", "Toping extra", "Comentarios", "Id_cliente", "Total"
+                "No. Pedido", "Producto", "Sabor", "Tamaño", "Toping extra", "Total", "Fecha", "Id_cliente", "Comentarios"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -521,13 +542,6 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
         );
-
-        btn_agregar1.setLabel("Agregar");
-        btn_agregar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_agregar1ActionPerformed(evt);
-            }
-        });
 
         btn_actualizar1.setLabel("Actualizar");
         btn_actualizar1.addActionListener(new java.awt.event.ActionListener() {
@@ -588,7 +602,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(lbl_estado8)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txt_stock3)
+                                .addComponent(txt_com)
                                 .addGap(70, 70, 70))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -627,17 +641,16 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
                                     .addComponent(txt_fecha, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn_agregar1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn_actualizar1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn_eliminar2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btn_Salir1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)))
-                        .addGap(44, 44, 44))
+                        .addGap(45, 45, 45))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(lbl_clientes)
                         .addGap(18, 18, 18)
-                        .addComponent(btn_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(203, 203, 203)
@@ -690,17 +703,15 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
                                     .addComponent(txt_totales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbl_clientes)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
+                        .addGap(81, 81, 81)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(lbl_estado9)
                                 .addComponent(txt_subtotal1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(btn_agregar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btn_actualizar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btn_eliminar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -715,7 +726,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
                 .addGap(25, 25, 25)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_estado8)
-                    .addComponent(txt_stock3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_com, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -776,8 +787,10 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txt_productoMouseClicked
 
     private void btn_agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarActionPerformed
+
         agregar();
         limpiar();
+        listar1();
         listar();
         nuevo();
     }//GEN-LAST:event_btn_agregarActionPerformed
@@ -791,7 +804,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_nuevoActionPerformed
 
     private void tabla_registroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_registroMouseClicked
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_tabla_registroMouseClicked
 
     private void txt_noPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_noPedidoActionPerformed
@@ -815,12 +828,37 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txt_PedidoActionPerformed
 
     private void tabla_editarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_editarMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tabla_editarMouseClicked
+       int fila=tabla_editar.getSelectedRow();
+        if(fila== -1)
+        {
+            JOptionPane.showMessageDialog(this,"Debe seleccionar una fila");
+        }
+        else{
 
-    private void btn_agregar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregar1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_agregar1ActionPerformed
+            String id=tabla_editar.getValueAt(fila, 0).toString();
+            String producto=tabla_editar.getValueAt(fila, 1).toString();
+            String sabor=tabla_editar.getValueAt(fila, 2).toString();
+            String tamaño=tabla_editar.getValueAt(fila, 3).toString();
+            String topping=tabla_editar.getValueAt(fila, 4).toString();
+            String total= tabla_editar.getValueAt(fila, 5).toString();
+            String fecha= tabla_editar.getValueAt(fila, 6).toString();  
+            String id_cliente=tabla_editar.getValueAt(fila, 7).toString();
+            String comentarios= tabla_editar.getValueAt(fila, 8).toString();  
+           
+            
+            
+            txt_Pedido.setText(id);
+            txt_producto2.setSelectedItem(producto);
+            txt_sabores.setSelectedItem(sabor);
+            txt_tamaño1.setSelectedItem(tamaño);
+            txt_extra1.setSelectedItem(topping);
+            txt_clientes.setText(id_cliente);
+            txt_totales.setText(total);
+            txt_fecha.setText(fecha);
+            txt_com.setText(comentarios);
+
+        }
+    }//GEN-LAST:event_tabla_editarMouseClicked
 
     private void btn_actualizar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actualizar1ActionPerformed
         // TODO add your handling code here:
@@ -831,7 +869,12 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_Salir1ActionPerformed
 
     private void btn_eliminar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminar2ActionPerformed
-        // TODO add your handling code here:
+       eliminar();
+       limpiar();
+       nuevoEditar();
+       listar1();
+       listar();
+       
     }//GEN-LAST:event_btn_eliminar2ActionPerformed
 
     private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
@@ -969,7 +1012,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         String cliente= txt_cliente.getText();
         String comentarios=txt_comentarios.getText();
 
-        Object [] ob=new Object[8];
+        Object [] ob=new Object[9];
         ob[0]=id;
         ob[1]=nom;
         ob[2]=tam;
@@ -988,12 +1031,12 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }
     void eliminar()
     {
-      int fila=tabla_registro.getSelectedRow();
+      int fila=tabla_editar.getSelectedRow();
       if(fila == -1)
       {
           JOptionPane.showMessageDialog(this, "Debe selecionar una fila");
       }else{
-        int ids=Integer.parseInt(tabla_registro.getValueAt(fila,0).toString());
+        int ids=Integer.parseInt(tabla_editar.getValueAt(fila,0).toString());
          p.eliminar(ids);
       }
     }
@@ -1005,7 +1048,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
       }
       else{
 
-     String id=txt_noPedido.getText();
+        String id=txt_noPedido.getText();
         String nom=txt_producto.getSelectedItem().toString();
         String tam=txt_tamaño.getSelectedItem().toString();
         String sabor= txt_sabor.getSelectedItem().toString();
@@ -1015,7 +1058,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         String cliente= txt_cliente.getText();
         String comentarios=txt_comentarios.getText();
 
-        Object [] ob=new Object[8];
+        Object [] ob=new Object[9];
         ob[0]=id;
         ob[1]=nom;
         ob[2]=tam;
@@ -1030,15 +1073,32 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
       }
     }
     void nuevo()
-    {   txt_producto.setSelectedItem("Seleccionar");
-        txt_tamaño.setSelectedItem("Seleccioanar");
-        txt_sabor.setSelectedItem("Seleccionar");
-        txt_extra.setSelectedItem("Seleccionar");
+    {   txt_producto.setSelectedItem("--Seleccionar--");
+        txt_tamaño.setSelectedItem("--Seleccionar--");
+        txt_sabor.setSelectedItem("--Seleccionar--");
+        txt_extra.setSelectedItem("--Seleccionar--");
         txt_total.setText("");
-        txt_fecha1.setText("");
+        txt_subtotal.setText("");
         txt_cliente.setText("");
         txt_comentarios.setText("");
+        txt_cobroextra.setText("");
         txt_producto.requestFocus();
+
+
+    }
+      void nuevoEditar()
+    {   txt_producto2.setSelectedItem("--Seleccionar--");
+        txt_tamaño1.setSelectedItem("--Seleccionar--");
+        txt_sabores.setSelectedItem("--Seleccionar--");
+        txt_extra1.setSelectedItem("--Seleccionar--");
+        txt_clientes.setText("");
+        txt_com.setText("");
+        txt_Pedido.setText("");
+        txt_fecha.setText("");
+        txt_totales.setText("");
+        txt_subtotal1.setText("");
+       txt_cobroextra1.setText("");
+        txt_producto2.requestFocus();
 
 
     }
@@ -1055,10 +1115,8 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     private java.awt.Button btn_Salir1;
     private java.awt.Button btn_actualizar1;
     private java.awt.Button btn_agregar;
-    private java.awt.Button btn_agregar1;
     private javax.swing.JButton btn_buscar;
     private javax.swing.JButton btn_calculador;
-    private javax.swing.JTextField btn_clientes;
     private java.awt.Button btn_eliminar2;
     private java.awt.Button btn_nuevo;
     private javax.swing.JButton jButton1;
@@ -1101,8 +1159,10 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     private javax.swing.JTable tabla_registro;
     private javax.swing.JTextField txt_Pedido;
     private javax.swing.JTextField txt_cliente;
+    private javax.swing.JTextField txt_clientes;
     private javax.swing.JTextField txt_cobroextra;
     private javax.swing.JTextField txt_cobroextra1;
+    private javax.swing.JTextField txt_com;
     private javax.swing.JTextField txt_comentarios;
     private javax.swing.JComboBox<String> txt_extra;
     private javax.swing.JComboBox<String> txt_extra1;
@@ -1113,7 +1173,6 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox<String> txt_producto2;
     private javax.swing.JComboBox<String> txt_sabor;
     private javax.swing.JComboBox<String> txt_sabores;
-    private javax.swing.JTextField txt_stock3;
     private javax.swing.JTextField txt_subtotal;
     private javax.swing.JTextField txt_subtotal1;
     private javax.swing.JComboBox<String> txt_tamaño;

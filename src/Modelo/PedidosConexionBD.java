@@ -69,8 +69,8 @@ public class PedidosConexionBD implements CRUD {
              Pedidos ped = new Pedidos();
              ped.setId_pedido(rs.getInt(1));
              ped.setProducto(rs.getString(2));
-             ped.setSabor(rs.getString(3));
-             ped.setTamaño(rs.getString(4));
+             ped.setSabor(rs.getString(4));
+             ped.setTamaño(rs.getString(3));
              ped.setTopping(rs.getString(5));
              ped.setTotal(rs.getFloat(6));
              ped.setFecha(rs.getString(7));
