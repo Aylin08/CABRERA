@@ -1,19 +1,44 @@
 package Vista;
 import Modelo.Conexion;
+import Modelo.Pedidos;
 import Modelo.PedidosConexionBD;
 import java.io.*;
 import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 /** @author Jhon Leunam
  */
 public class InventarioPastelesForm extends javax.swing.JInternalFrame {
 
     PedidosConexionBD p= new PedidosConexionBD();
-  
+   Pedidos pe= new Pedidos();
+    DefaultTableModel modelo= new DefaultTableModel();
+    
+    void listar()
+    {
+        List <Pedidos> lista=p.listar();
+        modelo=(DefaultTableModel)tabla_registro.getModel();
+        Object [] ob= new Object[8];
+        for(int i=0; i<lista.size(); i++)
+        {
+            ob[0]=lista.get(i).getId_pedido();
+            ob[1]=lista.get(i).getProducto();
+            ob[2]=lista.get(i).getSabor();
+            ob[3]=lista.get(i).getTamaño();
+            ob[4]=lista.get(i).getTopping();
+            ob[5]=lista.get(i).getTotal();
+            ob[6]=lista.get(i).getFecha();
+            ob[7]=lista.get(i).getId_cliente();
+            ob[8]=lista.get(i).getComentarios();
+            modelo.addRow(ob);
+        }
+        tabla_registro.setModel(modelo);
+    }
     public InventarioPastelesForm() {
         initComponents();
         generarSerie();
@@ -187,7 +212,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "No. Pedido", "Producto", "Tamaño", "Sabor", "Fecha", "Toping extra", "Comentarios", "Id_cliente", "Total"
+                "No. Pedido", "Producto", "Sabor", "Tamaño", "Toping extra", "Total", "Fecha", "Id_cliente", "Comentarios"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -751,29 +776,18 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txt_productoMouseClicked
 
     private void btn_agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarActionPerformed
-        /*agregar();
+        agregar();
         limpiar();
         listar();
-        nuevo();*/
+        nuevo();
     }//GEN-LAST:event_btn_agregarActionPerformed
 
     private void btn_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SalirActionPerformed
       this.dispose();
-        /* eliminar();
-        limpiar();
-        listar();
-        nuevo();*/
     }//GEN-LAST:event_btn_SalirActionPerformed
 
     private void btn_nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevoActionPerformed
-        Conexion c= new Conexion();
-        try {
-            c.Conector();
-            
-            //nuevo();
-        } catch (SQLException ex) {
-            Logger.getLogger(InventarioPastelesForm.class.getName()).log(Level.SEVERE, null, ex);
-        }
+      nuevo();
     }//GEN-LAST:event_btn_nuevoActionPerformed
 
     private void tabla_registroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_registroMouseClicked
@@ -943,7 +957,98 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
                     total3=Integer.toString(total);
                     txt_totales.setText(total3);
     }//GEN-LAST:event_jButton1ActionPerformed
+ void agregar()
+    {
+        String id=txt_noPedido.getText();
+        String nom=txt_producto.getSelectedItem().toString();
+        String tam=txt_tamaño.getSelectedItem().toString();
+        String sabor= txt_sabor.getSelectedItem().toString();
+        String extra= txt_extra.getSelectedItem().toString();
+        String total= txt_total.getText();
+        String fecha= txt_fecha1.getText();
+        String cliente= txt_cliente.getText();
+        String comentarios=txt_comentarios.getText();
 
+        Object [] ob=new Object[8];
+        ob[0]=id;
+        ob[1]=nom;
+        ob[2]=tam;
+        ob[3]=sabor;
+        ob[4]=extra;
+        ob[5]=total;
+        ob[6]=fecha;
+        ob[7]=cliente;
+        ob[8]=comentarios;
+        
+
+        p.add(ob);
+
+
+
+    }
+    void eliminar()
+    {
+      int fila=tabla_registro.getSelectedRow();
+      if(fila == -1)
+      {
+          JOptionPane.showMessageDialog(this, "Debe selecionar una fila");
+      }else{
+        int ids=Integer.parseInt(tabla_registro.getValueAt(fila,0).toString());
+         p.eliminar(ids);
+      }
+    }
+    void actualizar()
+    {int fila=tabla_registro.getSelectedRow();
+      if(fila == -1)
+      {
+          JOptionPane.showMessageDialog(this, "Debe selecionar una fila");
+      }
+      else{
+
+     String id=txt_noPedido.getText();
+        String nom=txt_producto.getSelectedItem().toString();
+        String tam=txt_tamaño.getSelectedItem().toString();
+        String sabor= txt_sabor.getSelectedItem().toString();
+        String extra= txt_extra.getSelectedItem().toString();
+        String total= txt_total.getText();
+        String fecha= txt_fecha1.getText();
+        String cliente= txt_cliente.getText();
+        String comentarios=txt_comentarios.getText();
+
+        Object [] ob=new Object[8];
+        ob[0]=id;
+        ob[1]=nom;
+        ob[2]=tam;
+        ob[3]=sabor;
+        ob[4]=extra;
+        ob[5]=total;
+        ob[6]=fecha;
+        ob[7]=cliente;
+        ob[8]=comentarios;
+
+        p.actualizar(ob);
+      }
+    }
+    void nuevo()
+    {   txt_producto.setSelectedItem("Seleccionar");
+        txt_tamaño.setSelectedItem("Seleccioanar");
+        txt_sabor.setSelectedItem("Seleccionar");
+        txt_extra.setSelectedItem("Seleccionar");
+        txt_total.setText("");
+        txt_fecha1.setText("");
+        txt_cliente.setText("");
+        txt_comentarios.setText("");
+        txt_producto.requestFocus();
+
+
+    }
+    void limpiar(){
+        for(int i=0; i<modelo.getRowCount(); i++)
+        {
+            modelo.removeRow(i);
+            i=i-1;
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button btn_Salir;

@@ -9,13 +9,13 @@ public class Pedidos {
     float   total;
     String Fecha;
     int Id_cliente;
-    int Id_materia;
+    String comentarios;
      String serie;
     
     public Pedidos(){
         
     }
-    public Pedidos(int Id_pedido, String Producto, String Sabor, String tamaño, String topping, float total, String Fecha,  int Id_cliente, int Id_materia,  String serie)
+    public Pedidos(int Id_pedido, String Producto, String Sabor, String tamaño, String topping, float total, String Fecha,  int Id_cliente, String comentarios,  String serie)
     {
     this.Id_pedido=Id_pedido;
     this.Producto=Producto;
@@ -25,7 +25,7 @@ public class Pedidos {
     this.total=total;
     this.Fecha=Fecha;
     this.Id_cliente= Id_cliente;
-    this.Id_materia= Id_materia;
+    this.comentarios= comentarios;
     this.serie=serie;
         
     }
@@ -102,12 +102,12 @@ public class Pedidos {
         this.Id_cliente = Id_cliente;
     }
 
-    public int getId_materia() {
-        return Id_materia;
+    public String getComentarios() {
+        return comentarios;
     }
 
-    public void setId_materia(int Id_materia) {
-        this.Id_materia = Id_materia;
+    public void setComentarios (String comentarios) {
+        this.comentarios = comentarios;
     }
     
 }
