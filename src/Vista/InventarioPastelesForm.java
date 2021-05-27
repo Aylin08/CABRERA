@@ -18,11 +18,12 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     PedidosConexionBD p= new PedidosConexionBD();
     Pedidos pe= new Pedidos();
     DefaultTableModel modelo= new DefaultTableModel();
+     DefaultTableModel modelo1= new DefaultTableModel();
    
     void listar()
     {
         List <Pedidos> lista=p.listar();
-        modelo=(DefaultTableModel)tabla_registro.getModel();
+        modelo1=(DefaultTableModel)tabla_registro.getModel();
         Object [] ob= new Object[9];
         for(int i=0; i<lista.size(); i++)
         {
@@ -35,9 +36,9 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
             ob[6]=lista.get(i).getFecha();
             ob[7]=lista.get(i).getId_cliente();
             ob[8]=lista.get(i).getComentarios();
-            modelo.addRow(ob);
+            modelo1.addRow(ob);
         }
-        tabla_registro.setModel(modelo);
+        tabla_registro.setModel(modelo1);
     }
      void listar1()
     {
@@ -790,6 +791,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
 
         agregar();
         limpiar();
+        limpiar1();
         listar1();
         listar();
         nuevo();
@@ -871,6 +873,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     private void btn_eliminar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminar2ActionPerformed
        eliminar();
        limpiar();
+       limpiar1();
        nuevoEditar();
        listar1();
        listar();
@@ -1106,6 +1109,13 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         for(int i=0; i<modelo.getRowCount(); i++)
         {
             modelo.removeRow(i);
+            i=i-1;
+        }
+    }
+     void limpiar1(){
+        for(int i=0; i<modelo1.getRowCount(); i++)
+        {
+            modelo1.removeRow(i);
             i=i-1;
         }
     }
