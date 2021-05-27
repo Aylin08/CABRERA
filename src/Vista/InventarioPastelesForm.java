@@ -3,6 +3,8 @@ import Modelo.Conexion;
 import Modelo.PedidosConexionBD;
 import java.io.*;
 import java.sql.SQLException;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
@@ -14,6 +16,13 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
   
     public InventarioPastelesForm() {
         initComponents();
+        generarSerie();
+        fecha();
+    }
+    void fecha(){
+        Calendar calendar=new GregorianCalendar();
+        txt_fecha1.setText(""+calendar.get(Calendar.YEAR)+"-"+calendar.get(Calendar.MONTH)+"-"+calendar.get(Calendar.DAY_OF_MONTH));
+       
     }
    void generarSerie()
     {

@@ -18,7 +18,7 @@ public class PedidosConexionBD {
    public String NoSerieVentas()
   {
       String serie="";
-      String sql ="Select max(Numero_ventas) from ventas";
+      String sql ="Select max(Id_pedido) from pedidos";
       try{
         con=cn.Conector();
         ps=con.prepareStatement(sql);
