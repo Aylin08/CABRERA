@@ -1,18 +1,16 @@
 package Vista;
 import Modelo.Conexion;
-import Modelo.Pedidos;
+import Modelo.PedidosConexionBD;
 import java.io.*;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
-/**
- *
- * @author Jhon Leunam
+/** @author Jhon Leunam
  */
 public class InventarioPastelesForm extends javax.swing.JInternalFrame {
 
-    Pedidos p= new Pedidos();
+    PedidosConexionBD p= new PedidosConexionBD();
   
     public InventarioPastelesForm() {
         initComponents();
