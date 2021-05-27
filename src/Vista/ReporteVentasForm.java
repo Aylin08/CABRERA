@@ -69,11 +69,11 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "No. Pedido", "Producto", "Tamaño", "Sabor", "Toping extra", "Comentarios", "Fecha solicitado", "Fecha entregada", "Total"
+                "No. Pedido", "Producto", "Tamaño", "Sabor", "Toping extra", "Comentarios", "Fecha entregada", "Total"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -91,10 +91,10 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+            .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 931, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

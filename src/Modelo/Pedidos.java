@@ -10,11 +10,12 @@ public class Pedidos {
     String Fecha;
     int Id_cliente;
     int Id_materia;
+     String serie;
     
     public Pedidos(){
         
     }
-    public Pedidos(int Id_pedido, String Producto, String Sabor, String tamaño, String topping, float total, String Fecha,  int Id_cliente, int Id_materia)
+    public Pedidos(int Id_pedido, String Producto, String Sabor, String tamaño, String topping, float total, String Fecha,  int Id_cliente, int Id_materia,  String serie)
     {
     this.Id_pedido=Id_pedido;
     this.Producto=Producto;
@@ -25,7 +26,16 @@ public class Pedidos {
     this.Fecha=Fecha;
     this.Id_cliente= Id_cliente;
     this.Id_materia= Id_materia;
+    this.serie=serie;
         
+    }
+
+    public String getSerie() {
+        return serie;
+    }
+
+    public void setSerie(String serie) {
+        this.serie = serie;
     }
 
     public int getId_pedido() {
