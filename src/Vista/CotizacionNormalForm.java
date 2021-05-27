@@ -4,6 +4,9 @@ import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 public class CotizacionNormalForm extends javax.swing.JFrame {
 
+    public CotizacionNormalForm(){
+        initComponents();
+    }
     double acum;
     Inicio in = new Inicio();
     
@@ -278,7 +281,7 @@ public class CotizacionNormalForm extends javax.swing.JFrame {
     if (confirmado == 0)
     { 
         FechasDisponiblesForm fed=new FechasDisponiblesForm();
-        //fed.setVisible(true);
+        fed.setVisible(true);
         //CotizacionNormalForm.escritorio.add(fed);
         //fed.toFront();
         //fed.setVisible(true);
