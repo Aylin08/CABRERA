@@ -1,9 +1,43 @@
 package Vista;
+
+import Modelo.Pedidos;
+import Modelo.PedidosConexionBD;
+import java.util.List;
+import javax.swing.table.DefaultTableModel;
+
 /** @author AYLIN*/
 public class ReporteVentasForm extends javax.swing.JInternalFrame {
-
+    PedidosConexionBD p= new PedidosConexionBD();
+    Pedidos pe= new Pedidos();
+    DefaultTableModel modelo= new DefaultTableModel();
+     
     public ReporteVentasForm() {
         initComponents();
+        listar();
+    }
+    
+     
+   
+    void listar()
+    {
+        List <Pedidos> lista=p.listar();
+        modelo=(DefaultTableModel)tabla_ventas.getModel();
+        Object [] ob= new Object[10];
+        for(int i=0; i<lista.size(); i++)
+        {
+            ob[0]=lista.get(i).getId_pedido();
+            ob[1]=lista.get(i).getProducto();
+            ob[2]=lista.get(i).getSabor();
+            ob[3]=lista.get(i).getTamaño();
+            ob[4]=lista.get(i).getTopping();
+            ob[5]=lista.get(i).getTotal();
+            ob[6]=lista.get(i).getFecha_actual();
+            ob[7]=lista.get(i).getFecha_entrega();
+            ob[8]=lista.get(i).getId_cliente();
+            ob[9]=lista.get(i).getComentarios();
+            modelo.addRow(ob);
+        }
+        tabla_ventas.setModel(modelo);
     }
 
     @SuppressWarnings("unchecked")
@@ -52,11 +86,11 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "No. Pedido", "Producto", "Tamaño", "Sabor", "Toping extra", "Comentarios", "Fecha entregada", "Total"
+                "No. Pedido", "Producto", "Sabor", "Tamaño", "Toping extra", "Total", "Fecha de emisión", "Fecha entregada", "Id_cliente", "Comentarios"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {

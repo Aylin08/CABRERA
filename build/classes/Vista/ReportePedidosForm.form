@@ -630,11 +630,11 @@
                   <Table columnCount="7" rowCount="0">
                     <Column editable="false" title="No. Pedido" type="java.lang.Object"/>
                     <Column editable="false" title="Producto" type="java.lang.Object"/>
-                    <Column editable="false" title="Tama&#xf1;o" type="java.lang.Object"/>
                     <Column editable="false" title="Sabor" type="java.lang.Object"/>
+                    <Column editable="false" title="Tama&#xf1;o" type="java.lang.Object"/>
                     <Column editable="false" title="Toping extra" type="java.lang.Object"/>
-                    <Column editable="false" title="Comentarios" type="java.lang.Object"/>
                     <Column editable="false" title="Fecha a entregar" type="java.lang.Object"/>
+                    <Column editable="false" title="Comentarios" type="java.lang.Object"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
