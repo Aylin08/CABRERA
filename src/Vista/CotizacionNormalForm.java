@@ -276,7 +276,7 @@ public class CotizacionNormalForm extends javax.swing.JFrame {
        
         Object[] options = { "Yes", "No" };
      int confirmado = JOptionPane.showOptionDialog( null,
-     "¿Desea confirmar pedido?","yas",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+     "¿Desea confirmar pedido?","Yes",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
 
     if (confirmado == 0)
     { 

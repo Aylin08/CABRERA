@@ -300,10 +300,12 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txt_telefonoActionPerformed
 
     private void btn_agregaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregaActionPerformed
-        agregar();
+        
+         agregar();
         limpiar();
         listar();
         nuevo();
+     
     }//GEN-LAST:event_btn_agregaActionPerformed
 
     private void btn_actualizaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actualizaActionPerformed
@@ -329,7 +331,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_salActionPerformed
  void agregar()
     {
-        try{
+        
         String Id_cliente=txt_cliente.getText();
         String nom=txt_nombre.getText();
         String telefono= txt_telefono.getText();
@@ -341,11 +343,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
         ob[2]=telefono;
         ob[3]=dir;
         ccbd.add(ob);
-        JOptionPane.showMessageDialog(null, "Registro agregado con éxito");
-        } catch( Exception e)
-        {
-            JOptionPane.showMessageDialog(null, "Error, no se pudoo agregar registro", "ERROR!", JOptionPane.ERROR_MESSAGE);
-        }
+       
         
         
     }

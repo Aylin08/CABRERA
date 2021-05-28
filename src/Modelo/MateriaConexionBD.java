@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -32,7 +33,7 @@ public class MateriaConexionBD implements CRUD {
         }
         catch(Exception e)
         {
-            
+             JOptionPane.showMessageDialog(null, "Error, no se puede actualizar registro", "ERROR!", JOptionPane.ERROR_MESSAGE);
         }
         return r;
     }
@@ -52,7 +53,7 @@ public class MateriaConexionBD implements CRUD {
               p.setCantidad(rs.getInt(3));      
         }
         } 
-        catch(Exception e){}
+        catch(Exception e){JOptionPane.showMessageDialog(null, "Error, Ocurrió un error en mostrar registros", "ERROR!", JOptionPane.ERROR_MESSAGE);}
         return p;
     }
 
@@ -76,7 +77,7 @@ public class MateriaConexionBD implements CRUD {
             }
         }
         catch(Exception e){
-            
+            JOptionPane.showMessageDialog(null, "Error, Ocurrió un error en mostrar registros", "ERROR!", JOptionPane.ERROR_MESSAGE);
         }
         return listaProducto;
     }
@@ -93,11 +94,11 @@ public class MateriaConexionBD implements CRUD {
           ps.setObject(3, o[2]);
           r= ps.executeUpdate();
         
-          
+          JOptionPane.showMessageDialog(null, "Registro agregado con éxito");
       }
       catch(Exception e)
       {
-          
+         JOptionPane.showMessageDialog(null, "Error, no se puede agregar registro", "ERROR!", JOptionPane.ERROR_MESSAGE); 
       }
       return r;
        
@@ -115,11 +116,11 @@ public class MateriaConexionBD implements CRUD {
           ps.setObject(3, o[2]);
           r= ps.executeUpdate();
         
-          
+           JOptionPane.showMessageDialog(null, "Registro actualizado con éxito");
       }
       catch(Exception e)
       {
-          
+          JOptionPane.showMessageDialog(null, "Error, no se puede actualizar registro", "ERROR!", JOptionPane.ERROR_MESSAGE);
       }
       return r;
     }
@@ -133,10 +134,11 @@ public class MateriaConexionBD implements CRUD {
           ps=con.prepareStatement(sql);
           ps.setInt(1, id);
           ps.executeUpdate();
+          JOptionPane.showMessageDialog(null, "Registro eliminado con éxito");
       }
       catch(Exception e)
       {
-          
+          JOptionPane.showMessageDialog(null, "Error, no se puede eliminar registro", "ERROR!", JOptionPane.ERROR_MESSAGE);
       }
     }
     

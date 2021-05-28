@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -52,7 +53,7 @@ public class PedidosConexionBD implements CRUD {
               p.setTotal(rs.getInt(3));      
         }
         } 
-        catch(Exception e){}
+        catch(Exception e){JOptionPane.showMessageDialog(null, "Error, Ocurrió un error en mostrar registros", "ERROR!", JOptionPane.ERROR_MESSAGE);}
         return p;
     }
 
@@ -86,7 +87,7 @@ public class PedidosConexionBD implements CRUD {
             }
         }
         catch(Exception e){
-            
+             JOptionPane.showMessageDialog(null, "Error, Ocurrió un error en mostrar registros", "ERROR!", JOptionPane.ERROR_MESSAGE);
         }
         return listaPedido;
     }
@@ -110,11 +111,11 @@ public class PedidosConexionBD implements CRUD {
           ps.setObject(10, o[9]);
           r= ps.executeUpdate();
         
-          
+           JOptionPane.showMessageDialog(null, "Registro agregado con éxito");
       }
       catch(Exception e)
       {
-          
+          JOptionPane.showMessageDialog(null, "Error, no se puede agregar registro", "ERROR!", JOptionPane.ERROR_MESSAGE); 
       }
       return r;
        
@@ -132,11 +133,11 @@ public class PedidosConexionBD implements CRUD {
           ps.setObject(3, o[2]);
           r= ps.executeUpdate();
         
-          
+          JOptionPane.showMessageDialog(null, "Registro actualizado con éxito");
       }
       catch(Exception e)
       {
-          
+           JOptionPane.showMessageDialog(null, "Error, no se puede actualizar registro", "ERROR!", JOptionPane.ERROR_MESSAGE);
       }
       return r;
     }
@@ -150,10 +151,11 @@ public class PedidosConexionBD implements CRUD {
           ps=con.prepareStatement(sql);
           ps.setInt(1, id);
           ps.executeUpdate();
+           JOptionPane.showMessageDialog(null, "Registro eliminado con éxito");
       }
       catch(Exception e)
       {
-          
+         JOptionPane.showMessageDialog(null, "Error, no se puede eliminar registro", "ERROR!", JOptionPane.ERROR_MESSAGE); 
       }
     } 
     
