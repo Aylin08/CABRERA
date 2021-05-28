@@ -316,10 +316,12 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_actualizaActionPerformed
 
     private void btn_eliminaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminaActionPerformed
-        eliminar();
+    
+       eliminar();
         limpiar();
         listar();
         nuevo();
+   
     }//GEN-LAST:event_btn_eliminaActionPerformed
 
     private void btn_nuevaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevaActionPerformed
@@ -327,7 +329,18 @@ public class ClienteForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btn_nuevaActionPerformed
 
     private void btn_salActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salActionPerformed
-       this.dispose();
+      
+         Object[] options = { "Yes", "No" };
+     int confirmado = JOptionPane.showOptionDialog( null,
+     "¿Desea salir?, puede que los cambios no guardados se borren","Salir",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+
+    if (confirmado == 0)
+    {  this.dispose();
+       }
+    else{
+           JOptionPane.showMessageDialog(null, "Bueno, seguimos trabajando");
+        
+    }
     }//GEN-LAST:event_btn_salActionPerformed
  void agregar()
     {

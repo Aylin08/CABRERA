@@ -117,12 +117,23 @@ public class ClienteConexionBD implements CRUD {
  
       String sql="delete from cliente where Id_cliente=?";
       try{
-          con=cn.Conector();
+                  Object[] options = { "Yes", "No" };
+     int confirmado = JOptionPane.showOptionDialog( null,
+     "¿Seguro que deseas eliminar registro?","Eliminar",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+
+    if (confirmado == 0)
+    { 
+         con=cn.Conector();
           ps=con.prepareStatement(sql);
           ps.setInt(1, id);
           ps.executeUpdate();
            JOptionPane.showMessageDialog(null, "Registro eliminado con éxito");
-      }
+            System.out.println("confirmado");}
+    else{
+            System.out.println("vale... no hago nada...");}
+        }  
+        
+      
       catch(Exception e)
       {
            JOptionPane.showMessageDialog(null, "Error, no se puede eliminar registro", "ERROR!", JOptionPane.ERROR_MESSAGE);

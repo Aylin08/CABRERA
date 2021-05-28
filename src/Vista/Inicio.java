@@ -8,6 +8,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JInternalFrame;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -206,7 +207,17 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_menuMouseClicked
 
     private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
-        System.exit(0);  
+           Object[] options = { "Yes", "No" };
+     int confirmado = JOptionPane.showOptionDialog( null,
+     "¿Desea salir?, puede que los cambios no guardados se borren","Salir",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+
+    if (confirmado == 0)
+    {  System.exit(0);
+       }
+    else{
+           JOptionPane.showMessageDialog(null, "Bueno, seguimos trabajando.");
+        
+    }
     }//GEN-LAST:event_salirActionPerformed
 
     private void normalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_normalActionPerformed
