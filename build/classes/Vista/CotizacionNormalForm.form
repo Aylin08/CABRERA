@@ -23,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="Panel_cotizacion" alignment="0" max="32767" attributes="0"/>
+          <Component id="Panel_cotizacion" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -46,52 +46,45 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lbl_direccion3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="box_extra" min="-2" pref="127" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="lbl_nombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lbl_direccion2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lbl_nombre3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="box_tamaño" alignment="0" min="-2" pref="127" max="-2" attributes="0"/>
-                                          <Component id="box_sabor" min="-2" pref="127" max="-2" attributes="0"/>
-                                          <Component id="box_producto" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lbl_estado7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="62" max="32767" attributes="0"/>
-                                      <Component id="txt_observaciones" min="-2" pref="184" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbl_nombre" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_nombre3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_direccion2" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_direccion3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_estado7" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="box_tamaño" max="32767" attributes="0"/>
+                              <Component id="box_producto" max="32767" attributes="0"/>
+                              <Component id="txt_observaciones" min="-2" pref="140" max="-2" attributes="0"/>
+                              <Component id="box_extra" alignment="0" max="32767" attributes="0"/>
+                              <Component id="box_sabor" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel3" min="-2" pref="237" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="Calcular" min="-2" pref="113" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jButton2" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -103,23 +96,17 @@
                       <Component id="jLabel3" min="-2" pref="52" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="box_producto" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lbl_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="box_tamaño" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lbl_nombre3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                      </Group>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="box_tamaño" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_nombre3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="box_sabor" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lbl_direccion2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -130,13 +117,13 @@
                       <Component id="box_extra" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="lbl_estado7" min="-2" max="-2" attributes="0"/>
-                      <Component id="txt_observaciones" min="-2" pref="66" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_observaciones" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="lbl_estado7" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" pref="37" max="-2" attributes="0"/>
-                  <EmptySpace pref="39" max="32767" attributes="0"/>
+                  <EmptySpace pref="31" max="32767" attributes="0"/>
+                  <Component id="Calcular" min="-2" pref="37" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
               <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
           </Group>
@@ -156,11 +143,17 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_estado7">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Img/observacion.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Observaciones:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_direccion3">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Img/nueces.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Toping Extra:"/>
           </Properties>
         </Component>
@@ -184,6 +177,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombre">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Img/tarta-de-queso.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Producto:"/>
           </Properties>
         </Component>
@@ -199,6 +195,7 @@
                 <StringItem index="5" value="Plancha completa"/>
               </StringArray>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Seleccione el producto."/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="box_productoActionPerformed"/>
@@ -209,6 +206,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_nombre3">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Img/grafico-circular.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Tama&#xf1;o:"/>
           </Properties>
         </Component>
@@ -231,15 +231,6 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="\ud83d\udda8" containsInvalidXMLChars="true"/>
-            <Property name="toolTipText" type="java.lang.String" value=""/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JComboBox" name="box_tama&#xf1;o">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -249,6 +240,7 @@
                 <StringItem index="2" value="Cupcakes"/>
               </StringArray>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Seleccione el tama&#xf1;o."/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="box_tama&#xf1;oMouseClicked"/>
@@ -260,6 +252,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_direccion2">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Img/receta.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Sabor:"/>
           </Properties>
         </Component>
@@ -279,58 +274,55 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="lbl_estado4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lbl_estado5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="lbl_estado6" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txt_cobroextra" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="txt_total" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="txt_subtotal" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                              <Component id="btn_aceptar" min="-2" pref="72" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Component id="btn_salir" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="lbl_estado4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="lbl_estado6" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl_estado5" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="48" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txt_cobroextra" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="txt_subtotal" min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="txt_total" min="-2" pref="59" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="63" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btn_salir" min="-2" pref="114" max="-2" attributes="0"/>
+                          <Component id="btn_aceptar" min="-2" pref="114" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl_estado4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_subtotal" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbl_estado5" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_cobroextra" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbl_estado6" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_total" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_estado6" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="btn_aceptar" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="btn_salir" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                      <Component id="btn_aceptar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btn_salir" min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -345,6 +337,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txt_subtotal">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lbl_estado5">
               <Properties>
@@ -363,18 +358,33 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txt_cobroextra">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txt_total">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btn_aceptar">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Img/comprobado.png"/>
                 </Property>
+                <Property name="text" type="java.lang.String" value="Aceptar"/>
                 <Property name="toolTipText" type="java.lang.String" value="Acepta Cotizaci&#xf3;n"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
-                    <BevelBorder/>
+                    <BevelBorder>
+                      <Color PropertyName="highlightOuter" blue="0" green="99" red="ff" type="rgb"/>
+                      <Color PropertyName="highlightInner" blue="0" green="99" red="ff" type="rgb"/>
+                      <Color PropertyName="shadowOuter" blue="0" green="99" red="ff" type="rgb"/>
+                      <Color PropertyName="shadowInner" blue="0" green="99" red="ff" type="rgb"/>
+                    </BevelBorder>
                   </Border>
                 </Property>
               </Properties>
@@ -384,13 +394,22 @@
             </Component>
             <Component class="javax.swing.JButton" name="btn_salir">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Img/cancelar.png"/>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" value="Rechaza cotizaci&#xf3;n"/>
+                <Property name="text" type="java.lang.String" value="Rechazar"/>
+                <Property name="toolTipText" type="java.lang.String" value="Salir"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
-                    <BevelBorder/>
+                    <BevelBorder>
+                      <Color PropertyName="highlightOuter" blue="0" green="99" red="ff" type="rgb"/>
+                      <Color PropertyName="highlightInner" blue="0" green="99" red="ff" type="rgb"/>
+                      <Color PropertyName="shadowOuter" blue="0" green="99" red="ff" type="rgb"/>
+                      <Color PropertyName="shadowInner" blue="0" green="99" red="ff" type="rgb"/>
+                    </BevelBorder>
                   </Border>
                 </Property>
               </Properties>
@@ -406,6 +425,37 @@
               <Image iconType="3" name="/Img/logo.png"/>
             </Property>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="Calcular">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="3"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="33" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Img/presupuesto.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Calcular"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder>
+                  <Color PropertyName="highlightOuter" blue="0" green="99" red="ff" type="rgb"/>
+                  <Color PropertyName="highlightInner" blue="0" green="99" red="ff" type="rgb"/>
+                  <Color PropertyName="shadowOuter" blue="0" green="99" red="ff" type="rgb"/>
+                  <Color PropertyName="shadowInner" blue="0" green="99" red="ff" type="rgb"/>
+                </BevelBorder>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CalcularActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
