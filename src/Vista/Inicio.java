@@ -68,6 +68,7 @@ public class Inicio extends javax.swing.JFrame {
 
         menu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/menu.png"))); // NOI18N
         menu.setText("Menú");
+        menu.setToolTipText("Menú principal");
         menu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 menuMouseClicked(evt);
@@ -76,6 +77,7 @@ public class Inicio extends javax.swing.JFrame {
 
         salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cancelar1.png"))); // NOI18N
         salir.setText("Salir");
+        salir.setToolTipText("Salir del sistema");
         salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salirActionPerformed(evt);
@@ -85,10 +87,12 @@ public class Inicio extends javax.swing.JFrame {
 
         ayuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/ayudar.png"))); // NOI18N
         ayuda.setText("Ayuda");
+        ayuda.setToolTipText("Soporte/ Ayuda");
         menu.add(ayuda);
 
         clientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/opinion-del-cliente.png"))); // NOI18N
         clientes.setText("Clientes");
+        clientes.setToolTipText("Clientes registrados");
         clientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clientesActionPerformed(evt);
@@ -100,13 +104,16 @@ public class Inicio extends javax.swing.JFrame {
 
         cotizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pago.png"))); // NOI18N
         cotizacion.setText("Cotización");
+        cotizacion.setToolTipText("Realizar cotización");
 
         eventos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/trabajo-en-equipo.png"))); // NOI18N
         eventos.setText("Eventos");
+        eventos.setToolTipText("Cotizaciones para eventos");
         cotizacion.add(eventos);
 
         normal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/llamada.png"))); // NOI18N
         normal.setText("Normal");
+        normal.setToolTipText("Cotizaciones individuales.");
         normal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 normalActionPerformed(evt);
@@ -118,9 +125,11 @@ public class Inicio extends javax.swing.JFrame {
 
         calendario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/fecha.png"))); // NOI18N
         calendario.setText("Fechas");
+        calendario.setToolTipText("Fechas");
 
         Fechas_disponibles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/calendario.png"))); // NOI18N
         Fechas_disponibles.setText("Abrir calendario");
+        Fechas_disponibles.setToolTipText("Abrir calendario");
         Fechas_disponibles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Fechas_disponiblesActionPerformed(evt);
@@ -132,9 +141,11 @@ public class Inicio extends javax.swing.JFrame {
 
         pedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/editar.png"))); // NOI18N
         pedido.setText("Pedidos");
+        pedido.setToolTipText("Ingresar pedido.");
 
         nuevo_editar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/anadir.png"))); // NOI18N
         nuevo_editar.setText("Nuevo / Editar");
+        nuevo_editar.setToolTipText("Editar o registra pedido");
         nuevo_editar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nuevo_editarActionPerformed(evt);
@@ -146,9 +157,11 @@ public class Inicio extends javax.swing.JFrame {
 
         inventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/factura.png"))); // NOI18N
         inventario.setText("Inventario");
+        inventario.setToolTipText("Inventarioy reportes");
 
         materia_prima.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/valores.png"))); // NOI18N
         materia_prima.setText("Inventario de materia prima");
+        materia_prima.setToolTipText("Materia prima ");
         materia_prima.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 materia_primaActionPerformed(evt);
@@ -158,6 +171,7 @@ public class Inicio extends javax.swing.JFrame {
 
         reporte_inventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/inventario.png"))); // NOI18N
         reporte_inventario.setText("Reporte de Inventario");
+        reporte_inventario.setToolTipText("Inventario en casa");
         reporte_inventario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reporte_inventarioActionPerformed(evt);
@@ -168,6 +182,7 @@ public class Inicio extends javax.swing.JFrame {
 
         reporte_pedidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/directorio.png"))); // NOI18N
         reporte_pedidos.setText("Reporte de pedidos");
+        reporte_pedidos.setToolTipText("Pedidos a realizar");
         reporte_pedidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reporte_pedidosActionPerformed(evt);
@@ -177,6 +192,7 @@ public class Inicio extends javax.swing.JFrame {
 
         reporte_ventas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/reporte.png"))); // NOI18N
         reporte_ventas.setText("Reporte de ventas");
+        reporte_ventas.setToolTipText("Ventas realizadas");
         reporte_ventas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reporte_ventasActionPerformed(evt);

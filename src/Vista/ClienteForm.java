@@ -84,6 +84,13 @@ public class ClienteForm extends javax.swing.JInternalFrame {
         lbl_telefono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/llamada-telefonica.png"))); // NOI18N
         lbl_telefono.setText("Teléfono:");
 
+        txt_cliente.setToolTipText("Id, solo debe contener números enteros.");
+
+        txt_nombre.setToolTipText("Ingrese Nombre del cliente");
+
+        txt_direccion.setToolTipText("Ingrese dirección de cliente");
+
+        txt_telefono.setToolTipText("Ingrese Teléfono de contacto.");
         txt_telefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_telefonoActionPerformed(evt);
@@ -92,6 +99,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
         btn_agrega.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/anadir.png"))); // NOI18N
         btn_agrega.setText("Agregar");
+        btn_agrega.setToolTipText("Agregar registro. ");
         btn_agrega.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_agregaActionPerformed(evt);
@@ -100,6 +108,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
         btn_actualiza.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/actualizar.png"))); // NOI18N
         btn_actualiza.setText("Actualizar");
+        btn_actualiza.setToolTipText("Actualizar registro");
         btn_actualiza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_actualizaActionPerformed(evt);
@@ -108,6 +117,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
         btn_elimina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/eliminar.png"))); // NOI18N
         btn_elimina.setText("Eliminar");
+        btn_elimina.setToolTipText("Eliminar registro");
         btn_elimina.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_eliminaActionPerformed(evt);
@@ -116,6 +126,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
         btn_nueva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/nuevo.png"))); // NOI18N
         btn_nueva.setText("Nuevo");
+        btn_nueva.setToolTipText("Nuevo registro");
         btn_nueva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_nuevaActionPerformed(evt);
@@ -124,6 +135,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
         btn_sal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/salida.png"))); // NOI18N
         btn_sal.setText("Salir");
+        btn_sal.setToolTipText("Salir de clientes");
         btn_sal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_salActionPerformed(evt);
@@ -209,6 +221,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
                 "Id_cliente", "Nombre", "Telefono", "Dirección"
             }
         ));
+        tabla_cliente.setToolTipText("Registros Activos. ");
         tabla_cliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tabla_cliente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

@@ -32,6 +32,7 @@
               <Image iconType="3" name="/Img/menu.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Men&#xfa;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Men&#xfa; principal"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="menuMouseClicked"/>
@@ -43,6 +44,7 @@
                   <Image iconType="3" name="/Img/cancelar1.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Salir"/>
+                <Property name="toolTipText" type="java.lang.String" value="Salir del sistema"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salirActionPerformed"/>
@@ -54,6 +56,7 @@
                   <Image iconType="3" name="/Img/ayudar.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ayuda"/>
+                <Property name="toolTipText" type="java.lang.String" value="Soporte/ Ayuda"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="clientes">
@@ -62,6 +65,7 @@
                   <Image iconType="3" name="/Img/opinion-del-cliente.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
+                <Property name="toolTipText" type="java.lang.String" value="Clientes registrados"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clientesActionPerformed"/>
@@ -75,6 +79,7 @@
               <Image iconType="3" name="/Img/pago.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cotizaci&#xf3;n"/>
+            <Property name="toolTipText" type="java.lang.String" value="Realizar cotizaci&#xf3;n"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="eventos">
@@ -83,6 +88,7 @@
                   <Image iconType="3" name="/Img/trabajo-en-equipo.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Eventos"/>
+                <Property name="toolTipText" type="java.lang.String" value="Cotizaciones para eventos"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="normal">
@@ -91,6 +97,7 @@
                   <Image iconType="3" name="/Img/llamada.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Normal"/>
+                <Property name="toolTipText" type="java.lang.String" value="Cotizaciones individuales."/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="normalActionPerformed"/>
@@ -104,6 +111,7 @@
               <Image iconType="3" name="/Img/fecha.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Fechas"/>
+            <Property name="toolTipText" type="java.lang.String" value="Fechas"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="Fechas_disponibles">
@@ -112,6 +120,7 @@
                   <Image iconType="3" name="/Img/calendario.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Abrir calendario"/>
+                <Property name="toolTipText" type="java.lang.String" value="Abrir calendario"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Fechas_disponiblesActionPerformed"/>
@@ -125,6 +134,7 @@
               <Image iconType="3" name="/Img/editar.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pedidos"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ingresar pedido."/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="nuevo_editar">
@@ -133,6 +143,7 @@
                   <Image iconType="3" name="/Img/anadir.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Nuevo / Editar"/>
+                <Property name="toolTipText" type="java.lang.String" value="Editar o registra pedido"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nuevo_editarActionPerformed"/>
@@ -146,6 +157,7 @@
               <Image iconType="3" name="/Img/factura.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Inventario"/>
+            <Property name="toolTipText" type="java.lang.String" value="Inventarioy reportes"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="materia_prima">
@@ -154,6 +166,7 @@
                   <Image iconType="3" name="/Img/valores.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Inventario de materia prima"/>
+                <Property name="toolTipText" type="java.lang.String" value="Materia prima "/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="materia_primaActionPerformed"/>
@@ -165,6 +178,7 @@
                   <Image iconType="3" name="/Img/inventario.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reporte de Inventario"/>
+                <Property name="toolTipText" type="java.lang.String" value="Inventario en casa"/>
               </Properties>
               <AccessibilityProperties>
                 <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
@@ -179,6 +193,7 @@
                   <Image iconType="3" name="/Img/directorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reporte de pedidos"/>
+                <Property name="toolTipText" type="java.lang.String" value="Pedidos a realizar"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="reporte_pedidosActionPerformed"/>
@@ -190,6 +205,7 @@
                   <Image iconType="3" name="/Img/reporte.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reporte de ventas"/>
+                <Property name="toolTipText" type="java.lang.String" value="Ventas realizadas"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="reporte_ventasActionPerformed"/>
