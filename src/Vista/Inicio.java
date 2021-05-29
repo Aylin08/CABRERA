@@ -247,10 +247,12 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_normalActionPerformed
 
     private void Fechas_disponiblesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fechas_disponiblesActionPerformed
+      try{ 
        FechasDisponiblesForm fd= new FechasDisponiblesForm();
        fd.setSize(895, 520);
-        fd.setVisible(true);
-       CentrarVentanaFrame(fd);
+       fd.setVisible(true);
+       CentrarVentanaFrame(fd);}
+     catch(Exception e ){}
     }//GEN-LAST:event_Fechas_disponiblesActionPerformed
 
     private void nuevo_editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevo_editarActionPerformed
