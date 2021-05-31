@@ -93,7 +93,9 @@ public class ClienteConexionBD implements CRUD {
     @Override
     public int actualizar(Object [] o) {
            int r=0;
-      String sql="update cliente set Id_cliente=?, Nombre_cliente=?, Telefono=?, Direccion=? ";
+      String sql="update cliente set Nombre_cliente=?, Telefono=?, Direccion=? where cliente.Id_cliente=?";
+      
+      
       try{
           con=cn.Conector();
           ps=con.prepareStatement(sql);
@@ -111,7 +113,9 @@ public class ClienteConexionBD implements CRUD {
       }
       return r;
     }
-
+    
+    
+     
     @Override
     public void eliminar(int id) {
  

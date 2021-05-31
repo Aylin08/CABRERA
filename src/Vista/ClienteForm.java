@@ -14,7 +14,7 @@ public class ClienteForm extends javax.swing.JInternalFrame {
 
   ClienteConexionBD ccbd= new ClienteConexionBD();
   Cliente cl= new Cliente();
-  
+  int id;
   DefaultTableModel modelo= new DefaultTableModel();
     
     
@@ -393,16 +393,17 @@ public class ClienteForm extends javax.swing.JInternalFrame {
       }
       else{
           
-       int Id_cliente =Integer.parseInt(txt_cliente.getText());
+       
         String nom=txt_nombre.getText();
         String tel= txt_telefono.getText();
         String dir=txt_direccion.getText();
+        
 
         Object [] ob=new Object[4];
-        ob[0]=Id_cliente;
-        ob[1]=nom;
+        ob[0]=nom;
+        ob[1]=tel;
         ob[2]=dir;
-        ob[3]=tel;
+        ob[3]=id;
         ccbd.actualizar(ob);
       }
     }
