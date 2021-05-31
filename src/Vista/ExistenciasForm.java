@@ -359,9 +359,9 @@ public class ExistenciasForm extends javax.swing.JInternalFrame {
         String producto=txt_producto.getText();
         String cant=txt_cantidad.getText();
         Object [] ob=new Object[3];
-        ob[0]=id;
-        ob[1]=producto;
-        ob[2]=cant;
+        ob[2]=id;
+        ob[0]=producto;
+        ob[1]=cant;
 
         bd.actualizar(ob);
       }

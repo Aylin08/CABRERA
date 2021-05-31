@@ -132,9 +132,9 @@ public class ClienteConexionBD implements CRUD {
           ps.setInt(1, id);
           ps.executeUpdate();
            JOptionPane.showMessageDialog(null, "Registro eliminado con éxito");
-            System.out.println("confirmado");}
+            }
     else{
-            System.out.println("vale... no hago nada...");}
+            JOptionPane.showMessageDialog(null, "OK, seguimos trabajando");}
         }  
         
       

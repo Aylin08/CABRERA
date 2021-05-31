@@ -127,14 +127,24 @@ public class MateriaConexionBD implements CRUD {
 
     @Override
     public void eliminar(int id) {
-          int r=0;
-      String sql="delete from materia where Id_materia=?";
+          
       try{
-          con=cn.Conector();
+         
+      String sql="delete from materia where Id_materia=?";
+      Object[] options = { "Yes", "No" };
+      int confirmado = JOptionPane.showOptionDialog( null,
+      "¿Seguro que deseas eliminar registro?","Eliminar",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+
+    if (confirmado == 0)
+    { int r=0;
+         con=cn.Conector();
           ps=con.prepareStatement(sql);
           ps.setInt(1, id);
           ps.executeUpdate();
-          JOptionPane.showMessageDialog(null, "Registro eliminado con éxito");
+          JOptionPane.showMessageDialog(null, "Registro eliminado con éxito");}
+      
+    else{
+            JOptionPane.showMessageDialog(null, "OK, seguimos trabajando");}
       }
       catch(Exception e)
       {

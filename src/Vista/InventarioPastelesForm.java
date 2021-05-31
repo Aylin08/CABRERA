@@ -1086,8 +1086,10 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
     private void btn_actualizaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_actualizaActionPerformed
         actualizar();
         limpiar();
+        limpiar1();
+        listar1();
         listar();
-        nuevo();
+        nuevoEditar();
     }//GEN-LAST:event_btn_actualizaActionPerformed
 
     private void btn_eliminaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminaActionPerformed
@@ -1215,14 +1217,14 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
       }
     }
     void actualizar()
-    {int fila=tabla_registro.getSelectedRow();
+    {int fila=tabla_editar.getSelectedRow();
       if(fila == -1)
       {
           JOptionPane.showMessageDialog(this, "Debe selecionar una fila");
       }
       else{
 
-        String id=txt_noPedido.getText();
+        int id=Integer.parseInt(txt_noPedido.getText());
         String nom=txt_producto.getSelectedItem().toString();
         String tam=txt_tamaño.getSelectedItem().toString();
         String sabor= txt_sabor.getSelectedItem().toString();
@@ -1230,20 +1232,21 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         String total= txt_total.getText();
         String fecha_actual= txt_fecha1.getText();
         String fecha_entrega= txt_entrega1.getText();
-        String cliente= txt_cliente.getText();
+        String cliente=(txt_cliente.getText());
         String comentarios=txt_comentarios.getText();
 
-        Object [] ob=new Object[9];
-        ob[0]=id;
-        ob[1]=nom;
+        Object [] ob=new Object[10];
+       
+        ob[0]=nom;
+        ob[1]=sabor;
         ob[2]=tam;
-        ob[3]=sabor;
-        ob[4]=extra;
-        ob[5]=total;
-        ob[6]=fecha_actual;
-        ob[7]=fecha_entrega;
-        ob[8]=cliente;
-        ob[9]=comentarios;
+        ob[3]=extra;
+        ob[4]=total;
+        ob[5]=fecha_actual;
+        ob[6]=fecha_entrega;
+        ob[7]=cliente;
+        ob[8]=comentarios;
+        ob[9]=id;
 
         p.actualizar(ob);
       }
