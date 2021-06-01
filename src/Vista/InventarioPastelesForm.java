@@ -1225,10 +1225,13 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
       else{
 
         int id=Integer.parseInt(txt_noPedido.getText());
+        
         String nom=txt_producto.getSelectedItem().toString();
         String tam=txt_tamaño.getSelectedItem().toString();
         String sabor= txt_sabor.getSelectedItem().toString();
         String extra= txt_extra.getSelectedItem().toString();
+        
+      
         String total= txt_total.getText();
         String fecha_actual= txt_fecha1.getText();
         String fecha_entrega= txt_entrega1.getText();
@@ -1244,7 +1247,7 @@ public class InventarioPastelesForm extends javax.swing.JInternalFrame {
         ob[4]=total;
         ob[5]=fecha_actual;
         ob[6]=fecha_entrega;
-        ob[7]=cliente;
+        //ob[7]=cliente;
         ob[8]=comentarios;
         ob[9]=id;
 

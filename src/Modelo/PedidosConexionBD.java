@@ -124,7 +124,7 @@ public class PedidosConexionBD implements CRUD {
     @Override
     public int actualizar(Object[] o) {
           int r=0;
-      String sql="update materia set Producto=? ,Sabor=?, tamaño=?, topping=?, Total=?, Fecha_actual=?, Fecha_entrega, Id_cliente, Comentarios where materia.Id_pedido=?";
+      String sql="update pedidos set Producto=? ,Sabor=?, tamaño=?, topping=?, Total=?, Fecha_actual=?, Fecha_entrega=?, Id_cliente=?, Comentarios=? where pedidos.Id_pedido=?";
       try{
           con=cn.Conector();
           ps=con.prepareStatement(sql);
