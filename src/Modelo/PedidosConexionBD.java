@@ -103,6 +103,7 @@ public class PedidosConexionBD implements CRUD {
     public int add(Object[] o) {
         int r=0;
       String sql="insert into pedidos (Id_pedido, Producto, Sabor, tamaño, topping, Total, Fecha_actual, Fecha_entrega, Id_cliente, Comentarios) values (?,?,?,?,?,?,?,?,?,?)";
+
       try{
           con=cn.Conector();
           ps=con.prepareStatement(sql);
@@ -130,9 +131,10 @@ public class PedidosConexionBD implements CRUD {
 
     @Override
     public int actualizar(Object[] o) {
-          int r=0;
-      String sql="update pedidos set Producto=? ,Sabor=?, tamaño=?, topping=?, Total=?, Fecha_actual=?, Fecha_entrega=?, Id_cliente=?, Comentarios=? where  Id_pedido=?";
+       int r=0;
       try{ 
+          
+           String sql="UPDATE pedidos SET Producto= ? ,Sabor= ?, tamaño= ?, topping= ?, Total= ?, Fecha_actual= ?, Fecha_entrega= ?, Id_cliente= ?, Comentarios= ? where pedidos.Id_pedido= ?";
           con=cn.Conector();
           ps=con.prepareStatement(sql);
           ps.setObject(1, o[0]);
