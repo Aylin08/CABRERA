@@ -48,9 +48,16 @@ public class PedidosConexionBD implements CRUD {
         while(rs.next())
         {
              
-              p.setId_pedido(1);
+              p.setId_pedido(rs.getInt(1));
               p.setProducto(rs.getString(2));
-              p.setTotal(rs.getInt(3));      
+              p.setSabor(rs.getString(3));
+              p.setTamaño(rs.getString(4));
+              p.setTopping(rs.getString(5));
+              p.setTotal(rs.getInt(6));   
+              p.setFecha_actual(rs.getString(7));
+              p.setFecha_entrega(rs.getString(8));
+              p.setId_cliente(rs.getInt(9));
+              p.setComentarios(rs.getString(10));
         }
         } 
         catch(Exception e){JOptionPane.showMessageDialog(null, "Error, Ocurrió un error en mostrar registros", "ERROR!", JOptionPane.ERROR_MESSAGE);}
@@ -124,8 +131,8 @@ public class PedidosConexionBD implements CRUD {
     @Override
     public int actualizar(Object[] o) {
           int r=0;
-      String sql="update pedidos set Producto=? ,Sabor=?, tamaño=?, topping=?, Total=?, Fecha_actual=?, Fecha_entrega=?, Id_cliente=?, Comentarios=? where pedidos.Id_pedido=?";
-      try{
+      String sql="update pedidos set Producto=? ,Sabor=?, tamaño=?, topping=?, Total=?, Fecha_actual=?, Fecha_entrega=?, Id_cliente=?, Comentarios=? where  Id_pedido=?";
+      try{ 
           con=cn.Conector();
           ps=con.prepareStatement(sql);
           ps.setObject(1, o[0]);
