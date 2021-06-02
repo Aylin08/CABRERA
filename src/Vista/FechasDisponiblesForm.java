@@ -1,4 +1,5 @@
 package Vista;
+import Modelo.fechas;
 import javax.swing.JOptionPane;
 /*** @author georg */
 public class FechasDisponiblesForm extends javax.swing.JFrame {
@@ -171,7 +172,7 @@ public class FechasDisponiblesForm extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Producto", "Descripción"
+                "Id", "Producto", "Comentarios"
             }
         ));
         jScrollPane2.setViewportView(tabla_reporte1);
@@ -183,6 +184,11 @@ public class FechasDisponiblesForm extends javax.swing.JFrame {
         rSCalendar1.setColorBackground(new java.awt.Color(255, 153, 51));
         rSCalendar1.setColorButtonHover(new java.awt.Color(255, 255, 51));
         rSCalendar1.setColorDiaActual(new java.awt.Color(255, 102, 102));
+        rSCalendar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                rSCalendar1MouseEntered(evt);
+            }
+        });
 
         lbl_registro2.setFont(new java.awt.Font("MV Boli", 1, 36)); // NOI18N
         lbl_registro2.setForeground(new java.awt.Color(255, 153, 0));
@@ -245,7 +251,7 @@ public class FechasDisponiblesForm extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(btn_salir1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Confirmar, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE))))
+                                    .addComponent(Confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, Short.MAX_VALUE))))
                         .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
@@ -288,6 +294,11 @@ public class FechasDisponiblesForm extends javax.swing.JFrame {
     private void btn_salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salir1ActionPerformed
         this.dispose();
     }//GEN-LAST:event_btn_salir1ActionPerformed
+
+    private void rSCalendar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSCalendar1MouseEntered
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_rSCalendar1MouseEntered
 
     /**
      * @param args the command line arguments
