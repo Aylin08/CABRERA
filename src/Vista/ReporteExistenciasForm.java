@@ -40,7 +40,6 @@ public class ReporteExistenciasForm extends javax.swing.JInternalFrame {
         tabla_reporte = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         lbl_reporte = new javax.swing.JLabel();
-        btn_buscar = new javax.swing.JButton();
         txt_noPedido = new javax.swing.JTextField();
         lbl_producto = new javax.swing.JLabel();
         btn_imprimir = new javax.swing.JButton();
@@ -64,13 +63,6 @@ public class ReporteExistenciasForm extends javax.swing.JInternalFrame {
         lbl_reporte.setFont(new java.awt.Font("MV Boli", 1, 36)); // NOI18N
         lbl_reporte.setForeground(new java.awt.Color(255, 255, 255));
         lbl_reporte.setText("Reporte de materia prima");
-
-        btn_buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/buscar.png"))); // NOI18N
-        btn_buscar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_buscarActionPerformed(evt);
-            }
-        });
 
         txt_noPedido.setEditable(false);
         txt_noPedido.addActionListener(new java.awt.event.ActionListener() {
@@ -115,9 +107,7 @@ public class ReporteExistenciasForm extends javax.swing.JInternalFrame {
                         .addGap(226, 226, 226)
                         .addComponent(lbl_producto)
                         .addGap(18, 18, 18)
-                        .addComponent(txt_noPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btn_buscar))
+                        .addComponent(txt_noPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(41, 41, 41)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -136,12 +126,10 @@ public class ReporteExistenciasForm extends javax.swing.JInternalFrame {
                     .addComponent(lbl_reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lbl_producto)
-                        .addComponent(txt_noPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btn_buscar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_producto)
+                    .addComponent(txt_noPedido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -152,10 +140,6 @@ public class ReporteExistenciasForm extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_buscarActionPerformed
 
     private void txt_noPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_noPedidoActionPerformed
         // TODO add your handling code here:
@@ -171,7 +155,6 @@ public class ReporteExistenciasForm extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_buscar;
     private javax.swing.JButton btn_imprimir;
     private javax.swing.JButton btn_salir;
     private javax.swing.JLabel jLabel4;
