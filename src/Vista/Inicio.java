@@ -249,7 +249,7 @@ public class Inicio extends javax.swing.JFrame {
     private void Fechas_disponiblesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fechas_disponiblesActionPerformed
       try{ 
        FechasDisponiblesForm fd= new FechasDisponiblesForm();
-       fd.setSize(895, 520);
+       fd.setSize(600,400);
        fd.setVisible(true);
        CentrarVentanaFrame(fd);}
      catch(Exception e ){}
