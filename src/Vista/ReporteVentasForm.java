@@ -45,8 +45,6 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         lbl_reporte = new javax.swing.JLabel();
-        lbl_pedido = new javax.swing.JLabel();
-        txt_Pedido = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -60,16 +58,6 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
         lbl_reporte.setFont(new java.awt.Font("MV Boli", 1, 36)); // NOI18N
         lbl_reporte.setForeground(new java.awt.Color(255, 255, 255));
         lbl_reporte.setText("Reporte de Ventas");
-
-        lbl_pedido.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        lbl_pedido.setText("No. Pedido");
-
-        txt_Pedido.setEditable(false);
-        txt_Pedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_PedidoActionPerformed(evt);
-            }
-        });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/logo.png"))); // NOI18N
 
@@ -135,18 +123,12 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lbl_reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(208, 208, 208)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel4)
-                        .addGap(39, 39, 39))
+                        .addGap(259, 259, 259))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lbl_pedido)
-                .addGap(18, 18, 18)
-                .addComponent(txt_Pedido, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(492, 492, 492))
             .addGroup(layout.createSequentialGroup()
                 .addGap(376, 376, 376)
                 .addComponent(btn_imprimir)
@@ -161,11 +143,7 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(lbl_reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_pedido)
-                    .addComponent(txt_Pedido, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,10 +154,6 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txt_PedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_PedidoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txt_PedidoActionPerformed
 
     private void tabla_ventasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabla_ventasMouseClicked
         // TODO add your handling code here:
@@ -196,9 +170,7 @@ public class ReporteVentasForm extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JLabel lbl_pedido;
     private javax.swing.JLabel lbl_reporte;
     private javax.swing.JTable tabla_ventas;
-    private javax.swing.JTextField txt_Pedido;
     // End of variables declaration//GEN-END:variables
 }
